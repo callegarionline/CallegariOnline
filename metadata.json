@@ -1,0 +1,6 @@
+{
+  "name": "Callegari Engenharia",
+  "description": "Engenharia Legal, Avaliações, Perícias, Desapropriações e Servidões para advogados e escritórios em todo o Brasil.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

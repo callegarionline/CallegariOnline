@@ -1,0 +1,119 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --brand-blue: #2f5d8f;
+    --brand-blue-hover: #244973;
+    --brand-blue-light: #f0f4f8;
+    --brand-gray: #727375;
+    --brand-gray-light: #f8fafc;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: #1e293b;
+    background-color: #ffffff;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+/* Custom scrollbar and subtle pattern overlays */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2f5d8f;
+}
+
+.bg-brand-blue {
+  background-color: #2f5d8f;
+}
+.bg-brand-blue-hover:hover {
+  background-color: #244973;
+}
+.text-brand-blue {
+  color: #2f5d8f;
+}
+.border-brand-blue {
+  border-color: #2f5d8f;
+}
+
+.text-brand-gray {
+  color: #727375;
+}
+.border-brand-gray {
+  border-color: #727375;
+}
+
+/* Subtle blueprint grid pattern */
+.bg-blueprint-pattern {
+  background-image: linear-gradient(to right, rgba(47, 93, 143, 0.04) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(47, 93, 143, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Watermark styling for background elegance */
+.watermark-bg {
+  background-image: radial-gradient(circle at 50% 50%, rgba(47, 93, 143, 0.03) 0%, transparent 70%);
+}
+
+/* Keyframe Animations for Impactful Hero Visuals */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(1deg);
+  }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.85;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+}
+
+@keyframes scanLine {
+  0% {
+    top: -10%;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    top: 110%;
+    opacity: 0;
+  }
+}
+
+.animate-float {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 3s ease-in-out infinite;
+}
+
+.animate-scan {
+  animation: scanLine 2.5s linear infinite;
+}
+
