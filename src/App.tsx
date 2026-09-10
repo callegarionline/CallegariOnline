@@ -12,7 +12,6 @@ import { PortfolioSection } from './components/PortfolioSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { BlogSection } from './components/BlogSection';
 import { ConversionCTA } from './components/ConversionCTA';
-import { ContactSection } from './components/ContactSection';
 import { Footer } from './components/Footer';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
 import { DemandEstimatorModal } from './components/DemandEstimatorModal';
@@ -126,11 +125,6 @@ export default function App() {
           {/* 12. CTA de Conversão */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
             <ConversionCTA onOpenBudgetModal={handleOpenBudget} />
-          </motion.div>
-
-          {/* 13. Contato (Camila Callegari, WhatsApp, Email) */}
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
-            <ContactSection />
           </motion.div>
         </main>
       )}

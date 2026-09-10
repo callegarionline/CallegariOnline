@@ -2,108 +2,83 @@ import { ServiceItem, CaseStudy, Testimonial, BlogPost, RegionCoverage } from '.
 
 export const COMPANY_INFO = {
   name: 'Callegari Engenharia',
-  tagline: 'Engenharia Legal, Avaliações e Perícias',
+  tagline: 'Assistência Técnica Judicial, Laudos Periciais de Avaliação Imobiliária e Engenharia Legal',
   yearsInMarket: 12,
-  responsiblePerson: 'Camila Callegari',
+  responsiblePerson: 'Callegari Engenharia',
   phone: '(27) 98118-8930',
   rawPhone: '5527981188930',
   email: 'contato@callegariengenharia.com.br',
   instagram: '@callegariengenharia',
   instagramUrl: 'https://instagram.com/callegariengenharia',
-  location: 'Vitória - ES | Atuação em Todo o Brasil',
-  defaultWhatsappMessage: 'Olá! Gostaria de solicitar informações sobre os serviços da Callegari Engenharia.',
+  location: 'Vitória - ES | Atuação Pericial em Todo o Brasil',
+  defaultWhatsappMessage: 'Olá! Preciso de suporte técnico para uma demanda de Assistência Técnica Judicial / Laudo de Avaliação Imobiliária.',
   certificationName: 'Certificação AA em Engenharia de Avaliações e Perícias',
   certificationBadge: 'CERTIFICAÇÃO AA',
-  certificationDescription: 'Acreditação de nível de excelência técnica técnica máxima para laudos de avaliação imobiliária e perícias judiciais conforme normas ABNT (NBR 14.653).',
+  certificationDescription: 'Acreditação técnica de nível máximo para laudos de avaliação imobiliária e perícias judiciais conforme normas ABNT NBR 14.653.',
   officialLogoUrl: 'https://lh3.googleusercontent.com/d/1Xd1iK-AM0P7s9kfeVSSv_wN3ARnErLBu',
   faviconUrl: 'https://lh3.googleusercontent.com/d/11veDIWuPs17o-5LmNYwhCXD8JBhXaOiN',
   officialLogoDriveUrl: 'https://drive.google.com/file/d/1Xd1iK-AM0P7s9kfeVSSv_wN3ARnErLBu/view?usp=drive_link',
   faviconDriveUrl: 'https://drive.google.com/file/d/11veDIWuPs17o-5LmNYwhCXD8JBhXaOiN/view?usp=drive_link',
   watermarkUrl: 'https://drive.google.com/file/d/17D_hXxHOE7rKwoSh38-ApIhfbrBKqulG/view?usp=drive_link',
+  sealDriveUrl: 'https://drive.google.com/file/d/17D_hXxHOE7rKwoSh38-ApIhfbrBKqulG/view?usp=drive_link',
+  sealDirectUrl: 'https://lh3.googleusercontent.com/d/17D_hXxHOE7rKwoSh38-ApIhfbrBKqulG',
+  sealFallbackUrl: 'https://drive.google.com/uc?export=view&id=17D_hXxHOE7rKwoSh38-ApIhfbrBKqulG',
 };
 
 export const SERVICES: ServiceItem[] = [
   {
-    id: 'laudos-periciais',
+    id: 'desapropriacoes',
     number: '01',
-    title: 'Laudos Periciais',
-    shortDescription: 'Elaboração de laudos técnicos com fundamentação, precisão e clareza para suporte a processos judiciais e extrajudiciais.',
-    fullDescription: 'Desenvolvimento de laudos periciais rigorosamente fundamentados nas normas da ABNT e na legislação vigente. Traduzimos termos e anomalias de engenharia em pareceres técnicos cristalinos, objetivos e irrefutáveis para instrução processual.',
+    title: 'Desapropriações',
+    shortDescription: 'Apuração do justo valor de indenização, mensuração de prejuízos efetivos e análise do impacto na área remanescente.',
+    fullDescription: 'Defesa técnica do valor indenizatório contra ofertas públicas subavaliadas em processos expropriatórios. Avaliamos terrenos, benfeitorias reprodutíveis, lucros cessantes e prejuízos no remanescente, apresentando pareceres periciais que combatem laudos oficiais subdimensionados.',
     applications: [
-      'Pareceres técnicos para processos judiciais',
-      'Vistorias cautelares de vizinhança e pré-obra',
-      'Identificação e nexo causal de patologias construtivas',
-      'Produção antecipada de provas'
+      'Apuração do justo valor de indenização prévia e definitiva',
+      'Mensuração de prejuízos efetivos e lucros cessantes',
+      'Análise de desvalorização e impacto na área remanescente',
+      'Assistência técnica em ações expropriatórias e desapropriação indireta'
     ],
     iconName: 'FileText'
   },
   {
-    id: 'engenharia-avaliacoes',
+    id: 'servidoes-administrativas',
     number: '02',
-    title: 'Engenharia de Avaliações',
-    shortDescription: 'Avaliação técnica de imóveis e bens, considerando critérios técnicos e metodologias adequadas a cada demanda.',
-    fullDescription: 'Determinação precisa do valor de mercado de imóveis urbanos, rurais, industriais e complexos empresariais empregando inferência estatística (Método Comparativo Direto) e tratamento científico conforme a NBR 14.653.',
+    title: 'Servidões Administrativas',
+    shortDescription: 'Cálculo de depreciação e determinação de coeficientes de indenização para linhas de transmissão, gasodutos e infraestrutura.',
+    fullDescription: 'Determinação precisa do impacto econômico causado pela instituição de servidões administrativas. Calculamos o coeficiente de desvalorização do imóvel serviente decorrente de restrições de uso, periculosidade e seccionamento territorial.',
     applications: [
-      'Avaliações imobiliárias para partilhas e inventários',
-      'Garantias bancárias e reavaliações patrimoniais',
-      'Determinação de valor de locação e renovatórias',
-      'Avaliação de complexos industriais e rurais'
-    ],
-    iconName: 'Building2'
-  },
-  {
-    id: 'pericias-engenharia',
-    number: '03',
-    title: 'Perícias de Engenharia',
-    shortDescription: 'Análises técnicas especializadas para identificação, avaliação e esclarecimento de questões relacionadas à engenharia.',
-    fullDescription: 'Inspeções e auditorias detalhadas para elucidar causas de sinistros, colapsos estruturais, vícios oculta e divergências contratuais em obras públicas ou privadas.',
-    applications: [
-      'Apuração de patologias em edificações',
-      'Inspeção predial e recebimento de obras',
-      'Auditoria técnica em contratos de construção',
-      'Análise de cumprimento de especificações normativas'
-    ],
-    iconName: 'Search'
-  },
-  {
-    id: 'desapropriacoes',
-    number: '04',
-    title: 'Desapropriações',
-    shortDescription: 'Suporte técnico especializado em processos e demandas envolvendo desapropriação.',
-    fullDescription: 'Atuação na determinação da justa indenização em processos expropriatórios promovidos pelo Poder Público ou concessionárias, garantindo o correto ressarcimento de imóveis e benfeitorias.',
-    applications: [
-      'Ações expropriatórias promovidas por entes públicos',
-      'Fixação de valor justo de indenização imobiliária',
-      'Avaliação de benfeitorias reparáveis e irreparáveis',
-      'Contestação técnica de laudos periciais oficiais'
-    ],
-    iconName: 'Scale'
-  },
-  {
-    id: 'servidoes',
-    number: '05',
-    title: 'Servidões',
-    shortDescription: 'Avaliações e análises técnicas relacionadas à implantação e instituição de servidões.',
-    fullDescription: 'Cálculo técnico de indenização por limitação administrativa ou instituição de servidões de passagem (linhas de transmissão, minerodutos, rodovias e adutoras), avaliando a depreciação do remanescente do imóvel.',
-    applications: [
-      'Servidões administrativas de passagem elétrica e dutos',
-      'Cálculo do coeficiente de depreciação do imóvel serviente',
-      'Análise do impacto técnico e restrição de uso do solo',
-      'Laudos de indenização justa para proprietários e concessionárias'
+      'Cálculo de coeficientes de indenização para linhas de transmissão',
+      'Faixas de servidão para gasodutos, minerodutos e adutoras',
+      'Determinação de depreciação econômica e restrição de uso',
+      'Pareceres técnicos para acordos e defesas judiciais'
     ],
     iconName: 'Compass'
   },
   {
-    id: 'assistencia-tecnica',
-    number: '06',
-    title: 'Assistência Técnica para Advogados',
-    shortDescription: 'Suporte técnico especializado para advogados e escritórios na interpretação, análise e desenvolvimento de estratégias relacionadas às questões de engenharia.',
-    fullDescription: 'Acompanhamento pericial completo desde a elaboração de quesitos estratégicos, participação na diligência de campo com o perito judicial, até a emissão de parecer técnico convergente ou divergente fundamentado.',
+    id: 'contestacao-tributaria',
+    number: '03',
+    title: 'Contestação Tributária (ITBI / IPTU / ITCMD)',
+    shortDescription: 'Identificação de superavaliações fiscais e revisão de bases de cálculo com fundamentação estatística aceita pelos tribunais e Fisco.',
+    fullDescription: 'Elaboramos laudos periciais de avaliação imobiliária de acordo com as normas ABNT NBR 14.653 e jurisprudência consolidada (Tema 1.113 do STJ) para afastar bases de cálculo fictícias ou abusivas fixadas pelo Fisco.',
     applications: [
-      'Formulação de quesitos iniciais e complementares estratégicos',
-      'Acompanhamento presencial de diligências periciais',
-      'Elaboração de Parecer Técnico Crítico ao laudo judicial',
-      'Reuniões alinhamento técnico-jurídico com a equipe de advogados'
+      'Identificação de superavaliações e pautas fiscais arbitrárias',
+      'Revisão administrativa e judicial da base de cálculo do ITBI',
+      'Contestação de IPTU abusivo e reavaliação cadastral municipal',
+      'Laudos para defesa e apuração do justo valor em ITCMD'
+    ],
+    iconName: 'Scale'
+  },
+  {
+    id: 'assistencia-tecnica-judicial',
+    number: '04',
+    title: 'Assistência Técnica Judicial',
+    shortDescription: 'Acompanhamento de vistorias, elaboração de quesitos, impugnação de laudos desfavoráveis e pareceres pré-constituídos.',
+    fullDescription: 'Atuação pericial estratégica em todas as fases do processo judicial. Formulamos quesitos assertivos, participamos das vistorias de campo e elaboramos pareceres técnicos divergentes para embasar as manifestações e teses dos advogados.',
+    applications: [
+      'Acompanhamento presencial de vistorias e diligências periciais',
+      'Elaboração de quesitos estratégicos, suplementares e elucidativos',
+      'Impugnação fundamentada de laudos periciais judiciais desfavoráveis',
+      'Pareceres técnicos pré-constituídos para instrução da petição inicial'
     ],
     iconName: 'Briefcase'
   }
@@ -111,43 +86,43 @@ export const SERVICES: ServiceItem[] = [
 
 export const DIFFERENTIALS = [
   {
-    title: 'Atendimento personalizado',
-    description: 'Cada demanda é analisada individualmente com total dedicação e estudo aprofundado do caso.'
+    title: 'Foco na Solução do Problema',
+    description: 'Não entregamos laudos genéricos. Desenvolvemos teses técnicas sob medida para vencer a lide e dar segurança à decisão.'
   },
   {
-    title: 'Visão técnica e estratégica',
-    description: 'Compreensão apurada da questão técnica perfeitamente alinhada ao contexto jurídico processual.'
+    title: 'Alinhamento Técnico-Jurídico',
+    description: 'Falamos a linguagem do Direito e traduzimos a complexidade da Engenharia em argumentos processuais claros e irrefutáveis.'
   },
   {
-    title: 'Precisão e Fundamentação',
-    description: 'Informações técnicas apresentadas com clareza cristalina, rigor normativo ABNT e objetividade.'
+    title: 'Blindagem contra Impugnações',
+    description: 'Laudos 100% aderentes à ABNT NBR 14.653 e com ART no CREA, garantindo peso probatório incontestável no processo.'
   },
   {
-    title: 'Solução sob medida',
-    description: 'O trabalho é desenvolvido rigorosamente de acordo com as particularidades de cada demanda.'
+    title: 'Agilidade & Suporte Direto',
+    description: 'Atendimento consultivo direto com a engenheira responsável para cumprir prazos judiciais com rigor e presteza.'
   }
 ];
 
 export const HOW_IT_WORKS_STEPS = [
   {
     number: '01',
-    title: 'Você apresenta a demanda',
-    description: 'Envie as informações e documentos iniciais do caso via formulário, e-mail ou WhatsApp.'
+    title: 'Apresente seu caso ou processo',
+    description: 'Envie os detalhes da lide, autos processuais ou endereço do imóvel para análise prévia sem compromisso.'
   },
   {
     number: '02',
-    title: 'Analisamos a necessidade',
-    description: 'Nossa equipe técnica avalia criteriosamente o contexto jurídico-técnico da questão.'
+    title: 'Diagnóstico e estratégia técnica',
+    description: 'Identificamos as normas ABNT aplicáveis, os pontos críticos da prova pericial e o escopo exato do trabalho.'
   },
   {
     number: '03',
-    title: 'Definimos a solução',
-    description: 'Indicamos o serviço técnico, o plano de trabalho e a metodologia mais adequada.'
+    title: 'Vistoria e perícia rigorosa',
+    description: 'Realizamos a diligência técnica no local com equipamentos de precisão e coleta de dados científicos de mercado.'
   },
   {
     number: '04',
-    title: 'Entregamos o resultado',
-    description: 'Produzimos o laudo ou parecer técnico com extrema precisão, clareza e responsabilidade.'
+    title: 'Entrega do Laudo ou Parecer',
+    description: 'Você recebe um documento pericial robusto, claro e com ART registrado no CREA, pronto para instruir ou vencer a causa.'
   }
 ];
 
@@ -155,39 +130,39 @@ export const CASE_STUDIES: CaseStudy[] = [
   {
     id: 'case-01',
     title: 'Revisão Indenizatória em Ação Expropriatória',
-    type: 'Desapropriação / Avaliação',
+    type: 'Desapropriação / Avaliação Imobiliária',
     area: 'Direito Administrativo & Imobiliário',
     challenge: 'Avaliação inicial do órgão expropriante apresentou subavaliação expressiva de imóvel de alto valor com benfeitorias não computadas.',
-    solution: 'Aplicação do Método Comparativo Direto de Dados de Mercado e Método de Custo de Recomposição para benfeitorias especiais com inferência estatística.',
+    solution: 'Aplicação do Método Comparativo Direto de Dados de Mercado e Método de Custo de Recomposição para benfeitorias especiais com inferência estatística ABNT.',
     result: 'O parecer técnico assistencial fundamentou a decisão judicial, resultando na adequação do valor indenizatório ao valor real de mercado.',
-    badge: 'CASO REALIZADO'
+    badge: 'RESULTADO COMPROVADO'
   },
   {
     id: 'case-02',
-    title: 'Servidão de Passagem de Linha de Transmissão',
-    type: 'Servidões Administrativas',
-    area: 'Direito de Energia & Infraestrutura',
-    challenge: 'Determinação do real impacto e desvalorização no remanescente de propriedade rural após seccionamento por faixa de servidão de alta tensão.',
-    solution: 'Estudo do coeficiente de desvalorização considerando zoneamento, restrições agrícolas, riscos e incômodos permanentes.',
-    result: 'Elaboração de laudo de avaliação de servidão aceito e homologado extrajudicialmente pelas partes, acelerando o acordo.',
-    badge: 'ESTUDO DE CASO'
+    title: 'Contestação de Base de Cálculo de ITBI',
+    type: 'Contestação de ITBI / Avaliação ABNT',
+    area: 'Direito Tributário Imobiliário',
+    challenge: 'Fisco municipal arbitrou valor venal de referência 45% superior ao real valor de mercado praticado na compra e venda do imóvel corporativo.',
+    solution: 'Elaboração de Laudo Pericial de Avaliação Imobiliária com tratamento estatístico por regressão linear conforme NBR 14.653-2.',
+    result: 'Homologação judicial da base de cálculo real, gerando expressiva economia tributária e repetição do valor recolhido a maior.',
+    badge: 'ECONOMIA TRIBUTÁRIA'
   },
   {
     id: 'case-03',
-    title: 'Perícia Técnica em Ação Renovatória de Aluguel',
-    type: 'Engenharia de Avaliações',
+    title: 'Assistência Técnica em Ação Renovatória de Aluguel',
+    type: 'Assistência Técnica Judicial',
     area: 'Direito Imobiliário & Empresarial',
     challenge: 'Divergência significativa entre o valor pleiteado pelo locador e o valor praticado no polo comercial de alta densidade.',
-    solution: 'Pesquisa amostragem de dados comparativos rigorosa tratada por regressão linear conforme NBR 14.653-2.',
-    result: 'Determinação exata do valor locativo justo, amparando a tese do escritório parceiro e homologando o aluguel razoável.',
-    badge: 'PARCERIA JURÍDICA'
+    solution: 'Formulação de quesitos estratégicos e parecer técnico crítico demonstrando desvios na amostragem adotada pelo laudo do juízo.',
+    result: 'Determinação exata do valor locativo justo, amparando a tese do advogado e fixando aluguel compatível com a realidade de mercado.',
+    badge: 'DEFESA TÉCNICA'
   }
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: 'test-1',
-    quote: 'A Callegari Engenharia demonstrou uma clareza técnica exemplar no parecer assistencial de uma ação judicial de grande complexidade. A fundamentação impecável foi determinante para a tese da nossa defesa.',
+    quote: 'A Callegari Engenharia demonstrou uma clareza técnica exemplar no parecer de assistência técnica judicial. A fundamentação impecável foi o ponto central para vencer a impugnação do laudo pericial.',
     name: 'Dr. Roberto Mendonça',
     role: 'Sócio Fundador',
     organization: 'Mendonça & Associados Advocacia',
@@ -195,7 +170,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: 'test-2',
-    quote: 'Trabalhar com a Camila Callegari e sua equipe nos traz absoluta tranquilidade. Eles entendem a urgência e a linguagem do meio jurídico, entregando pareceres precisos e quesitos altamente estratégicos.',
+    quote: 'Trabalhar com a Callegari Engenharia nos traz absoluta segurança. Eles entendem a urgência dos prazos processuais e a linguagem do Direito, entregando pareceres e quesitos altamente estratégicos.',
     name: 'Dra. Patricia Alencar',
     role: 'Advogada Especialista em Direito Imobiliário',
     organization: 'Alencar Advocacia Cível',
@@ -203,7 +178,7 @@ export const TESTIMONIALS: Testimonial[] = [
   },
   {
     id: 'test-3',
-    quote: 'Excelente suporte em demandas de engenharia de avaliações e desapropriações. Agilidade na entrega dos laudos e extrema precisão nos cálculos das indenizações.',
+    quote: 'Excelente suporte em laudos periciais de avaliação imobiliária e contestação de tributos. Agilidade na entrega e extrema precisão técnica em todo o Brasil.',
     name: 'Dr. Carlos Eduardo Rocha',
     role: 'Coordenador de Contencioso Cível',
     organization: 'Rocha & Varejão Advogados',
@@ -214,11 +189,11 @@ export const TESTIMONIALS: Testimonial[] = [
 export const BLOG_POSTS: BlogPost[] = [
   {
     id: 'artigo-1',
-    title: 'A importância da formulação estratégica de quesitos na Perícia Judicial',
-    category: 'Engenharia Legal',
+    title: 'Assistência Técnica Judicial: Como a formulação estratégica de quesitos decide a perícia',
+    category: 'Assistência Técnica Judicial',
     readTime: '5 min de leitura',
     date: '10 Ago 2026',
-    summary: 'Como os quesitos bem elaborados pelo assistente técnico orientam o perito judicial e evitam laudos omissos ou tendenciosos no processo.',
+    summary: 'Descubra como os quesitos elaborados pelo assistente técnico orientam o perito judicial, fecham brechas e evitam laudos omissos ou tendenciosos no processo.',
     imageUrl: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&q=80&w=800',
     content: [
       'Na produção da prova pericial de engenharia, a elaboração dos quesitos é uma das etapas mais decisivas para o sucesso processual da demanda.',
@@ -228,11 +203,11 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     id: 'artigo-2',
-    title: 'NBR 14.653: Critérios fundamentais na avaliação imobiliária de alta precisão',
-    category: 'Avaliações',
+    title: 'Laudo Pericial de Avaliação Imobiliária (NBR 14.653): Segurança em inventários e partilhas',
+    category: 'Avaliação Imobiliária',
     readTime: '6 min de leitura',
     date: '28 Jul 2026',
-    summary: 'Conheça os graus de fundamentação e precisão estipulados pela norma brasileira para laudos imobiliários com validade jurídica.',
+    summary: 'Conheça os graus de fundamentação e precisão estipulados pela ABNT para laudos imobiliários com validade jurídica incontestável.',
     imageUrl: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=800',
     content: [
       'A avaliação de um imóvel para fins judiciais ou garantes bancárias não é mera estimativa de valor. Trata-se de um estudo científico regulamentado pela NBR 14.653.',
@@ -242,16 +217,16 @@ export const BLOG_POSTS: BlogPost[] = [
   },
   {
     id: 'artigo-3',
-    title: 'Indenização Justa em Desapropriações e Servidões Administrativas',
-    category: 'Desapropriações',
+    title: 'Contestação de ITBI e IPTU: Como laudos periciais reduzem impostos abusivos',
+    category: 'Contestação de ITBI/IPTU',
     readTime: '7 min de leitura',
     date: '15 Jul 2026',
-    summary: 'Entenda os conceitos de prejuízo efetivo, depreciação do remanescente e lucros cessantes na instituição de servidões e desapropriações.',
+    summary: 'Entenda como o Tema 1.113 do STJ garante o direito à revisão da base de cálculo do ITBI e como o laudo técnico viabiliza a economia tributária.',
     imageUrl: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&q=80&w=800',
     content: [
-      'A Constituição Federal garante que a desapropriação por utilidade pública deve ser precedida de justa e prévia indenização em dinheiro.',
-      'Entretanto, a fixação desse valor frequentemente omite a depreciação do imóvel remanescente ou prejuízos decorrentes do seccionamento da área por faixas de servidão.',
-      'A perícia de engenharia avalia detalhadamente o dano direto e indireto, garantindo que o proprietário ou expropriado receba o ressarcimento exato do impacto patrimonial.'
+      'O Superior Tribunal de Justiça consolidou o entendimento de que o valor venal de referência municipal não pode ser arbitrado unilateralmente pelo Fisco para cobrança de ITBI.',
+      'Com o laudo técnico pericial fundamentado na NBR 14.653, o contribuinte comprova documentalmente o valor real da operação imobiliária.',
+      'Essa prova pericial é o instrumento indispensável para impugnar cobranças indevidas tanto na esfera administrativa quanto judicialmente.'
     ]
   }
 ];
@@ -282,3 +257,4 @@ export const NATIONAL_COVERAGE_REGIONS: RegionCoverage[] = [
     highlightCities: ['Salvador', 'Recife', 'Fortaleza', 'Belém', 'Manaus']
   }
 ];
+

@@ -42,15 +42,15 @@ export const ConversionCTA: React.FC<ConversionCTAProps> = ({ onOpenBudgetModal 
         <div className="max-w-3xl mx-auto space-y-6">
           
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-200 text-xs font-mono font-bold tracking-widest uppercase">
-            <span>ATENDIMENTO ESPECIALIZADO</span>
+            <span>RESPOSTA RÁPIDA & ANÁLISE PRÉVIA</span>
           </div>
 
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-serif leading-tight text-white drop-shadow-sm">
-            Sua demanda exige uma análise técnica especializada?
+            Precisa de Assistência Técnica Judicial ou Laudo de Avaliação Urgente?
           </h2>
 
           <p className="text-blue-100 text-base sm:text-lg leading-relaxed font-normal max-w-2xl mx-auto">
-            Conte-nos o que você precisa. Nossa equipe analisará sua demanda e indicará o melhor caminho técnico para o seu caso.
+            Não deixe prazos processuais correrem sem suporte pericial. Envie os detalhes da demanda ou os autos do processo e receba uma análise técnica preliminar com a metodologia ABNT aplicável.
           </p>
 
           <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -62,7 +62,7 @@ export const ConversionCTA: React.FC<ConversionCTAProps> = ({ onOpenBudgetModal 
               }}
               className="w-full sm:w-auto bg-[#2f5d8f] hover:bg-[#234870] text-white font-bold text-sm tracking-wider uppercase px-8 py-4 rounded-md shadow-xl transition-all flex items-center justify-center gap-2 group cursor-pointer border border-blue-400/30"
             >
-              <span>SOLICITAR ORÇAMENTO</span>
+              <span>SOLICITAR ANÁLISE DO PROCESSO</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </a>
 
@@ -73,7 +73,7 @@ export const ConversionCTA: React.FC<ConversionCTAProps> = ({ onOpenBudgetModal 
               className="w-full sm:w-auto bg-slate-900/80 hover:bg-slate-800 text-white border border-slate-600 hover:border-slate-400 font-bold text-sm tracking-wider uppercase px-7 py-3.5 rounded-md transition-all flex items-center justify-center gap-2 shadow-lg backdrop-blur-sm"
             >
               <MessageSquare className="w-4 h-4 text-emerald-400" />
-              <span>FALAR PELO WHATSAPP</span>
+              <span>FALAR COM ENGENHEIRA PELO WHATSAPP</span>
             </a>
           </div>
 

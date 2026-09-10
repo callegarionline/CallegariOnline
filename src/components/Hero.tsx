@@ -58,26 +58,18 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBudgetModal }) => {
           {/* Main Copy Content */}
           <div className="lg:col-span-7 space-y-6">
             
-            {/* Tagline Badge with Line Accent */}
-            <div className="inline-flex items-center gap-2">
-              <span className="w-8 h-[2px] bg-[#2f5d8f]" />
-              <span className="text-[11px] font-bold text-[#2f5d8f] uppercase tracking-[0.3em]">
-                Engenharia Legal e de Avaliações
-              </span>
-            </div>
-
-            {/* Headline */}
+            {/* H1 Headline */}
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-black leading-[1.15] font-serif tracking-tight">
-              Engenharia Legal que transforma <span className="text-[#2f5d8f]">complexidade técnica</span> em decisões mais seguras.
+              Engenharia Legal que transforma <span className="text-[#2f5d8f]">complexidade técnica</span> em segurança jurídica.
             </h1>
 
             {/* Supporting Description */}
-            <p className="text-[#727375] text-base sm:text-lg leading-relaxed max-w-xl font-normal">
-              Avaliações, perícias e soluções técnicas especializadas para apoiar advogados e escritórios de advocacia em demandas judiciais e extrajudiciais em todo o Brasil.
+            <p className="text-slate-800 text-base sm:text-lg leading-relaxed max-w-xl font-normal">
+              Elaboramos laudos periciais, avaliações patrimoniais e pareceres técnicos fundamentados na ABNT para blindar teses de advogados, escritórios e investidores em litígios de alto valor em todo o Brasil.
             </p>
 
             {/* Action Buttons - Sharp Rectangular Styling */}
-            <div className="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+            <div className="pt-3 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
               <a
                 href="#orcamento"
                 onClick={(e) => {
@@ -86,7 +78,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBudgetModal }) => {
                 }}
                 className="inline-flex items-center justify-center gap-2 bg-[#2f5d8f] hover:bg-[#234870] text-white text-xs sm:text-sm font-bold tracking-wider uppercase px-8 py-4 transition-all shadow-md hover:shadow-lg group"
               >
-                <span>SOLICITAR ORÇAMENTO</span>
+                <span>SOLICITAR ANÁLISE PRÉVIA</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
 

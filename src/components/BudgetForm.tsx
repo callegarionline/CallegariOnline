@@ -223,13 +223,13 @@ Gostaria de solicitar um orçamento/análise de demanda.
                       onChange={handleChange}
                       className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-[#2f5d8f] focus:border-transparent text-sm outline-none transition-all bg-white"
                     >
-                      <option value="Laudos Periciais">Laudos Periciais</option>
-                      <option value="Engenharia de Avaliações">Engenharia de Avaliações</option>
-                      <option value="Perícias de Engenharia">Perícias de Engenharia</option>
-                      <option value="Desapropriações">Desapropriações</option>
-                      <option value="Servidões">Servidões Administrativas</option>
-                      <option value="Assistência Técnica para Advogados">Assistência Técnica para Advogados</option>
-                      <option value="Outro">Outro Tipo de Demanda</option>
+                      <option value="Assistência Técnica Judicial">Assistência Técnica Judicial</option>
+                      <option value="Laudo Pericial de Avaliação Imobiliária">Laudo Pericial de Avaliação Imobiliária (NBR 14.653)</option>
+                      <option value="Contestação de ITBI / IPTU">Contestação de ITBI / IPTU (Revisão de Base)</option>
+                      <option value="Engenharia Legal e Perícias">Engenharia Legal e Vícios Construtivos</option>
+                      <option value="Desapropriações">Desapropriações e Indenização Justa</option>
+                      <option value="Servidões">Servidões Administrativas e Passagens</option>
+                      <option value="Outro">Outra Demanda Técnica</option>
                     </select>
                   </div>
                 </div>

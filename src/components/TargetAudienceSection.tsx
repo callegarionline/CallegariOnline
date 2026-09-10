@@ -12,26 +12,23 @@ export const TargetAudienceSection: React.FC<TargetAudienceSectionProps> = ({ on
   const targetGroups = [
     {
       title: 'Advogados',
-      subtitle: 'Suporte técnico para demandas específicas e estratégicas.',
-      description: 'Assistência direta para instruir petições iniciais, contestar laudos judiciais desfavoráveis, formular quesitos assertivos e acompanhar diligências de campo.',
+      description: 'Assistência técnica pericial de ponta a ponta, formulação de quesitos estratégicos e elaboração de pareceres divergentes em processos judiciais.',
       icon: UserCheck,
-      badge: 'Demandas Estratégicas',
+      badge: 'Contencioso Cível',
       image: audienceAdvogados
     },
     {
       title: 'Escritórios de Advocacia',
-      subtitle: 'Parceria técnica para complementar a atuação jurídica.',
-      description: 'Atuação contínua como braço técnico especializado das bancas jurídicas em litígios imobiliários, societários, expropriatórios e de infraestrutura.',
+      description: 'Parceria de longo prazo para reforçar a equipe probatória da banca em demandas imobiliárias, societárias e de direito administrativo/tributário.',
       icon: Building,
-      badge: 'Parceria Institucional',
+      badge: 'Parceria Estratégica',
       image: audienceEscritorios
     },
     {
-      title: 'Parceiros Estratégicos',
-      subtitle: 'Soluções para empresas e gestores de patrimônio.',
-      description: 'Atendimento corporativo a fundos imobiliários, incorporadoras, gestores patrimoniais e departamentos jurídicos de empresas privadas e concessionárias.',
+      title: 'Empresas & Proprietários',
+      description: 'Avaliação patrimonial justa de ativos imobiliários, contestação de impostos (ITBI/IPTU) e renegociação de contratos com fundamentação científica.',
       icon: Handshake,
-      badge: 'Soluções Corporativas',
+      badge: 'Proteção de Ativos',
       image: audienceParceiros
     }
   ];
@@ -44,16 +41,16 @@ export const TargetAudienceSection: React.FC<TargetAudienceSectionProps> = ({ on
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
           <div className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-[#2f5d8f] uppercase">
             <span className="w-6 h-0.5 bg-[#2f5d8f]" />
-            PARA QUEM TRABALHAMOS
+            PÚBLICO-ALVO
             <span className="w-6 h-0.5 bg-[#2f5d8f]" />
           </div>
 
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-serif leading-tight">
-            Suporte técnico para quem precisa defender, avaliar e decidir com segurança.
+            Suporte técnico especializado para quem precisa fundamentar, contestar e decidir com segurança.
           </h2>
 
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Nossa atuação é especialmente direcionada a <strong className="text-slate-900">advogados e escritórios de advocacia</strong> que precisam de suporte técnico confiável para fundamentar estratégias, análises e decisões em demandas judiciais e extrajudiciais.
+            Soluções sob medida para o contencioso e consultivo de alta complexidade.
           </p>
         </div>
 
@@ -95,11 +92,7 @@ export const TargetAudienceSection: React.FC<TargetAudienceSectionProps> = ({ on
 
                   {/* Card Content Body */}
                   <div className="p-6 space-y-3">
-                    <div className="text-xs font-bold text-[#2f5d8f] leading-snug">
-                      {group.subtitle}
-                    </div>
-
-                    <p className="text-xs text-slate-600 leading-relaxed font-normal">
+                    <p className="text-sm text-slate-700 leading-relaxed font-normal">
                       {group.description}
                     </p>
                   </div>

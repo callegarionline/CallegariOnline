@@ -45,21 +45,21 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBudgetMo
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
           <div className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-[#2f5d8f] uppercase">
             <span className="w-6 h-0.5 bg-[#2f5d8f]" />
-            NOSSOS SERVIÇOS
+            SOLUÇÕES PERICIAIS
             <span className="w-6 h-0.5 bg-[#2f5d8f]" />
           </div>
 
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 font-serif leading-tight">
-            Soluções técnicas para demandas complexas.
+            Engenharia Legal aplicada a controvérsias de alto valor.
           </h2>
 
           <p className="text-slate-600 text-base leading-relaxed">
-            Atuamos em diferentes áreas da Engenharia Legal, desenvolvendo laudos, avaliações, perícias e suporte técnico especializado para demandas judiciais e extrajudiciais.
+            Soluções estruturadas para instruir ações judiciais, impugnar laudos periciais frágeis, contestar tributos municipais abusivos e determinar o valor real de mercado com respaldo da ABNT NBR 14.653.
           </p>
         </div>
 
-        {/* 6 Service Cards Grid - High Emphasis with Larger Icons & Brand Colors */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* 4 Service Cards Grid - 2x2 Clean Balanced Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {SERVICES.map((service) => {
             const IconComponent = getIcon(service.iconName);
             return (
@@ -83,19 +83,9 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBudgetMo
                     </h3>
                   </div>
 
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6 font-normal">
+                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
                     {service.shortDescription}
                   </p>
-                </div>
-
-                <div className="pt-4 border-t border-slate-100">
-                  <button
-                    onClick={() => setSelectedService(service)}
-                    className="w-full inline-flex items-center justify-between text-xs font-bold text-[#2f5d8f] group-hover:text-[#234870] uppercase tracking-wider py-1"
-                  >
-                    <span>VER APLICAÇÕES DETALHADAS</span>
-                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-                  </button>
                 </div>
               </div>
             );

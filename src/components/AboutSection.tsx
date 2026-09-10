@@ -1,6 +1,6 @@
 import React from 'react';
-import { Award, CheckCircle2, ShieldAlert, FileCheck2 } from 'lucide-react';
-import { COMPANY_INFO } from '../data/companyData';
+import { CheckCircle2, ShieldCheck } from 'lucide-react';
+import legalEngineeringImg from '../assets/images/legal_engineering_report_1788303678275.jpg';
 
 export const AboutSection: React.FC = () => {
   return (
@@ -15,105 +15,73 @@ export const AboutSection: React.FC = () => {
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-[#2f5d8f] uppercase">
               <span className="w-8 h-0.5 bg-[#2f5d8f]" />
-              QUEM SOMOS
+              SEGURANÇA JURÍDICA & PROTEÇÃO PATRIMONIAL
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 font-serif leading-tight">
-              Experiência técnica para demandas que exigem precisão.
+              Rigor científico e visão estratégica para demandas que não admitem erros.
             </h2>
 
             <div className="space-y-4 text-slate-700 text-base leading-relaxed">
               <p>
-                A <strong className="text-slate-900 font-semibold">Callegari Engenharia</strong> atua há{' '}
-                <strong className="text-[#2f5d8f] font-bold">12 anos</strong> no mercado, oferecendo soluções altamente especializadas em Engenharia Legal, avaliações imobiliárias e perícias.
+                Com mais de uma década de atuação, a <strong className="text-slate-900 font-semibold">Callegari Engenharia</strong> combina conhecimento normativo aprofundado e inteligência pericial para atuar na interface exata entre a Engenharia e o Direito.
               </p>
               <p>
-                Nossa atuação combina conhecimento técnico apurado, rigor metodológico e profunda compreensão das necessidades jurídicas de cada caso.
-              </p>
-              <p>
-                Mais do que elaborar um laudo, buscamos compreender a fundo a demanda apresentada e entregar uma solução técnica clara, fundamentada e adequada aos objetivos e estratégias do cliente.
-              </p>
-              <p>
-                Nosso trabalho é desenvolvido com foco absoluto em{' '}
-                <strong className="text-slate-900 font-semibold">precisão, responsabilidade técnica, clareza e efetividade</strong>.
+                Não entregamos apenas relatórios; entregamos provas técnicas robustas que suportam decisões judiciais e negociações extrajudiciais complexas, reduzindo drasticamente o risco de sucumbência para bancas de advocacia e grandes proprietários.
               </p>
             </div>
 
             {/* Core Values Bullet List */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
-              <div className="flex items-start gap-3 p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <div className="flex items-start gap-3 p-4 bg-slate-50 rounded-xl border border-slate-200">
                 <CheckCircle2 className="w-5 h-5 text-[#2f5d8f] shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold text-slate-900 text-sm">Precisão e Fundamentação</h4>
-                  <p className="text-xs text-slate-600 mt-0.5">Metodologias normatizadas ABNT e tratamento científico de dados.</p>
+                  <p className="text-xs text-slate-600 mt-0.5">Aplicação rigorosa das NBRs 14653 e 13752 com inferência estatística e amostragem de mercado auditável.</p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3 p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <div className="flex items-start gap-3 p-4 bg-slate-50 rounded-xl border border-slate-200">
                 <CheckCircle2 className="w-5 h-5 text-[#2f5d8f] shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-slate-900 text-sm">Responsabilidade Técnica</h4>
-                  <p className="text-xs text-slate-600 mt-0.5">Laudos com ART (Anotação de Responsabilidade Técnica) junto ao CREA.</p>
+                  <h4 className="font-bold text-slate-900 text-sm">Responsabilidade & Cumprimento de Prazos</h4>
+                  <p className="text-xs text-slate-600 mt-0.5">Gestão ágil e compromisso com o calendário e quesitamentação processual.</p>
                 </div>
               </div>
             </div>
 
           </div>
 
-          {/* Right Side: Authority Box & Dedicated Certificação AA Box */}
-          <div className="lg:col-span-5 space-y-6">
-            
-            {/* 12 Years Big Banner Card */}
-            <div className="bg-[#2f5d8f] text-white p-8 rounded-xl shadow-lg relative overflow-hidden">
-              <div className="absolute -right-8 -bottom-8 opacity-10 pointer-events-none">
-                <Award className="w-64 h-64 text-white" />
-              </div>
-              <div className="relative z-10 space-y-2">
-                <div className="text-5xl font-black font-serif tracking-tight text-white">12 anos</div>
-                <div className="text-lg font-bold tracking-wide uppercase text-blue-100">de atuação no mercado</div>
-                <p className="text-xs text-blue-100 leading-relaxed pt-2 border-t border-blue-400/40">
-                  Consolidação técnica em Engenharia Legal com histórico comprovado na elaboração de laudos periciais e pareceres assistenciais em ações de alto impacto.
-                </p>
-              </div>
-            </div>
-
-            {/* Dedicated Certificação AA Area */}
-            <div className="bg-slate-50 border-2 border-slate-200 rounded-xl p-6 relative hover:border-[#2f5d8f]/40 transition-all shadow-sm">
-              <div className="flex items-center justify-between pb-3 border-b border-slate-200">
-                <div className="flex items-center gap-2.5">
-                  <div className="p-2 bg-[#2f5d8f] text-white rounded">
-                    <FileCheck2 className="w-5 h-5" />
+          {/* Right Side: Professional Contextual Image */}
+          <div className="lg:col-span-5 relative">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 group">
+              <img
+                src={legalEngineeringImg}
+                alt="Engenharia Legal, Laudos e Perícias"
+                className="w-full h-[460px] object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-900/20 to-transparent pointer-events-none" />
+              
+              {/* Floating Overlay Badge */}
+              <div className="absolute bottom-6 left-6 right-6 p-4 rounded-xl bg-slate-900/90 backdrop-blur-md border border-white/10 text-white shadow-xl">
+                <div className="flex items-center gap-3">
+                  <div className="p-2.5 rounded-lg bg-[#2f5d8f] text-white shrink-0">
+                    <ShieldCheck className="w-5 h-5" />
                   </div>
                   <div>
-                    <h3 className="font-extrabold text-slate-900 text-base font-serif">Certificação AA</h3>
-                    <p className="text-xs text-[#727375]">Selo de Excelência Técnica</p>
+                    <h4 className="text-xs font-bold uppercase tracking-wider text-blue-200">
+                      Engenharia Legal & Avaliações
+                    </h4>
+                    <p className="text-xs text-slate-300 font-normal mt-0.5">
+                      Rigor técnico e suporte probatório em todo o Brasil.
+                    </p>
                   </div>
                 </div>
-                <span className="bg-[#2f5d8f] text-white text-[10px] font-bold tracking-widest px-2.5 py-1 rounded uppercase">
-                  ACREDITAÇÃO
-                </span>
               </div>
-
-              {/* Graphic Representation of Seal */}
-              <div className="mt-4 flex items-center gap-4">
-                <div className="w-16 h-16 shrink-0 rounded-full bg-gradient-to-br from-amber-100 to-amber-200 border-2 border-amber-400 flex items-center justify-center shadow-inner">
-                  <div className="text-center">
-                    <div className="text-xs font-black text-amber-900 tracking-tighter">CERTIFICAÇÃO</div>
-                    <div className="text-lg font-black text-[#2f5d8f] leading-none">AA</div>
-                  </div>
-                </div>
-                <div className="space-y-1">
-                  <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wide">
-                    {COMPANY_INFO.certificationName}
-                  </h4>
-                  <p className="text-xs text-slate-600 leading-relaxed">
-                    Reconhecimento de capacitação e rigor técnico nos mais elevados padrões exigidos pelo mercado judiciário e extrajudicial.
-                  </p>
-                </div>
-              </div>
-
             </div>
 
+            {/* Decorative subtle backdrop element */}
+            <div className="absolute -bottom-4 -right-4 w-48 h-48 bg-[#2f5d8f]/10 rounded-full blur-2xl -z-10" />
           </div>
 
         </div>

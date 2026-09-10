@@ -65,7 +65,7 @@ export const Header: React.FC<HeaderProps> = () => {
           isScrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-12 py-2 opacity-100'
         }`}
       >
-        <div className="max-w-7xl mx-auto flex justify-between items-center font-medium">
+        <div className="max-w-7xl mx-auto flex justify-start items-center font-medium">
           <div className="flex items-center gap-6">
             <a
               href={`https://wa.me/${COMPANY_INFO.rawPhone}?text=${encodeURIComponent(COMPANY_INFO.defaultWhatsappMessage)}`}
@@ -84,10 +84,6 @@ export const Header: React.FC<HeaderProps> = () => {
               <Phone className="w-3.5 h-3.5 text-blue-200" />
               <span>{COMPANY_INFO.email}</span>
             </a>
-          </div>
-
-          <div className="text-[11px] font-mono text-blue-100/90 tracking-wide uppercase">
-            <span>Responsável Técnica: {COMPANY_INFO.responsiblePerson}</span>
           </div>
         </div>
       </div>

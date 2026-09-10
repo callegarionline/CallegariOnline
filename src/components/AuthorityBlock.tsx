@@ -4,10 +4,10 @@ import { Award, Globe2, ShieldCheck, UserCheck2, Sparkles, CheckCircle2 } from '
 export const AuthorityBlock: React.FC = () => {
   const metrics = [
     {
-      value: '12 ANOS',
-      highlight: 'DE TRAJETÓRIA',
+      value: '12+ ANOS',
+      highlight: 'AUTORIDADE',
       label: 'Experiência & Consistência',
-      sublabel: 'Rigor normativo e histórico sólido em perícias complexas.',
+      sublabel: 'Mais de 3.000 laudos periciais e pareceres técnicos elaborados com rigor normativo indiscutível.',
       icon: Award,
       badge: 'Desde 2014',
       gradient: 'from-blue-600 to-indigo-700',
@@ -17,12 +17,12 @@ export const AuthorityBlock: React.FC = () => {
       borderAccent: 'hover:border-amber-400/40',
     },
     {
-      value: '100% BRASIL',
-      highlight: 'COBERTURA INTEGRAL',
+      value: '16+ ESTADOS',
+      highlight: 'ESCALA NACIONAL',
       label: 'Atuação Nacional',
-      sublabel: 'Presença técnica e assistência remota e presencial em todo o país.',
+      sublabel: 'Mobilidade e estrutura logística para realizar vistorias e perícias complexas em qualquer comarca do Brasil.',
       icon: Globe2,
-      badge: 'Todos os Estados',
+      badge: 'Todo o Brasil',
       gradient: 'from-cyan-600 to-blue-700',
       iconBg: 'bg-gradient-to-br from-cyan-400 to-blue-600',
       iconColor: 'text-white',
@@ -30,12 +30,12 @@ export const AuthorityBlock: React.FC = () => {
       borderAccent: 'hover:border-cyan-400/40',
     },
     {
-      value: 'RIGOR LEGAL',
-      highlight: 'ABNT NBR 14.653',
-      label: 'Especialização Técnica',
-      sublabel: 'Laudos periciais e avaliações fundamentados para segurança jurídica.',
+      value: '+R$ 5 MI',
+      highlight: 'ECONOMIA & VALOR',
+      label: 'Otimização Tributária',
+      sublabel: 'Redução efetiva e fundamentada de valores superavaliados em contestações fiscais de ITBI, IPTU e ITCMD.',
       icon: ShieldCheck,
-      badge: 'CREA & IBAPE',
+      badge: 'Economia Real',
       gradient: 'from-blue-700 to-slate-800',
       iconBg: 'bg-gradient-to-br from-emerald-400 to-teal-600',
       iconColor: 'text-white',
@@ -43,12 +43,12 @@ export const AuthorityBlock: React.FC = () => {
       borderAccent: 'hover:border-emerald-400/40',
     },
     {
-      value: 'PERSONALIZADO',
-      highlight: 'SOB MEDIDA',
-      label: 'Atendimento Consultivo',
-      sublabel: 'Formulação estratégica de quesitos e suporte direto para advogados.',
+      value: 'ABNT & IBAPE',
+      highlight: 'RECONHECIMENTO',
+      label: 'Rigor Normativo',
+      sublabel: 'Laudos elaborados por peritos membros da Diretoria do IBAPE e mestres em Engenharia de Avaliações.',
       icon: UserCheck2,
-      badge: 'Suporte Direto',
+      badge: 'Diretoria IBAPE',
       gradient: 'from-slate-700 to-blue-900',
       iconBg: 'bg-gradient-to-br from-blue-400 to-indigo-600',
       iconColor: 'text-white',
@@ -127,11 +127,6 @@ export const AuthorityBlock: React.FC = () => {
                   </p>
                 </div>
 
-                {/* Bottom decorative subtle indicator */}
-                <div className="pt-4 mt-4 border-t border-white/5 flex items-center justify-between text-[11px] text-slate-400 font-mono">
-                  <span className="text-[10px] text-blue-300/70 group-hover:text-cyan-300 transition-colors">CALLEGARI ENGENHARIA</span>
-                  <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 group-hover:scale-150 transition-transform" />
-                </div>
               </div>
             );
           })}
