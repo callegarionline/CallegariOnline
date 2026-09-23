@@ -37,6 +37,18 @@ export interface BlogPost {
   summary: string;
   content: string[];
   imageUrl: string;
+  author?: string;
+  metaTitle?: string;
+  metaDescription?: string;
+  table?: {
+    headers: string[];
+    rows: string[][];
+    caption?: string;
+  };
+  references?: string[];
+  whatsappUrl?: string;
+  whatsappLabel?: string;
+  ibapeUrl?: string;
 }
 
 export interface RegionCoverage {

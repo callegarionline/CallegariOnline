@@ -1,8 +1,12 @@
 import React from 'react';
-import { CheckCircle2, ShieldCheck } from 'lucide-react';
+import { CheckCircle2, ShieldCheck, ArrowRight } from 'lucide-react';
 import legalEngineeringImg from '../assets/images/legal_engineering_report_1788303678275.jpg';
 
-export const AboutSection: React.FC = () => {
+interface AboutSectionProps {
+  onNavigateToSeguranca?: () => void;
+}
+
+export const AboutSection: React.FC<AboutSectionProps> = ({ onNavigateToSeguranca }) => {
   return (
     <section id="quem-somos" className="py-20 bg-white relative overflow-hidden">
       {/* Background radial accent */}
@@ -49,6 +53,19 @@ export const AboutSection: React.FC = () => {
                 </div>
               </div>
             </div>
+
+            {/* Link to Dedicated Internal Page */}
+            {onNavigateToSeguranca && (
+              <div className="pt-2">
+                <button
+                  onClick={onNavigateToSeguranca}
+                  className="inline-flex items-center gap-2 text-sm font-bold text-[#2f5d8f] hover:text-[#234870] bg-blue-50/80 hover:bg-blue-100/80 border border-blue-200 px-5 py-3 rounded-xl transition-all shadow-sm hover:shadow cursor-pointer group"
+                >
+                  <span>Conhecer um pouco mais da Callegari Engenharia</span>
+                  <ArrowRight className="w-4 h-4 text-[#2f5d8f] group-hover:translate-x-1 transition-transform" />
+                </button>
+              </div>
+            )}
 
           </div>
 

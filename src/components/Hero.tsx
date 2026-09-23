@@ -1,24 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import heroBgImage1 from '../assets/images/hero_bg_engineering_1786490060979.jpg';
-import heroBgImage2 from '../assets/images/hero_bg_valuation_1786538451052.jpg';
-import heroTechImage from '../assets/images/hero_engineering_tech_1787220008077.jpg';
+import heroBuildingsImage from '../assets/images/hero_buildings_engineering_1789050587321.jpg';
+import heroForensicDarkImage from '../assets/images/hero_forensic_dark_1789089864272.jpg';
 
 interface HeroProps {
   onOpenBudgetModal?: () => void;
 }
 
 export const Hero: React.FC<HeroProps> = ({ onOpenBudgetModal }) => {
-  const [activeImageIndex, setActiveImageIndex] = useState(0);
-  const heroImages = [heroBgImage1, heroBgImage2];
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveImageIndex((prev) => (prev === 0 ? 1 : 0));
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
-
   const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     const element = document.querySelector(href);
@@ -34,22 +23,17 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBudgetModal }) => {
   };
 
   return (
-    <section id="home" className="relative pt-36 sm:pt-44 lg:pt-48 pb-16 md:pb-20 bg-slate-900 overflow-hidden border-b border-gray-100">
-      {/* Hero Background Fade Slider Layer with controlled opacity */}
-      <div className="absolute inset-0 pointer-events-none z-0">
-        {heroImages.map((img, idx) => (
-          <img
-            key={idx}
-            src={img}
-            alt="Engenharia Legal e de Avaliações"
-            className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000 ${
-              activeImageIndex === idx ? 'opacity-[0.12]' : 'opacity-0'
-            }`}
-            referrerPolicy="no-referrer"
-          />
-        ))}
-        {/* Soft gradient overlay ensuring clear reading of dark-on-light / high-contrast text */}
-        <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/80" />
+    <section id="home" className="relative pt-36 sm:pt-44 lg:pt-48 pb-16 md:pb-20 bg-slate-100 overflow-hidden border-b border-gray-200">
+      {/* Background: Imagem de engenharia e prédios com maior luminosidade e visibilidade */}
+      <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
+        <img
+          src={heroBuildingsImage}
+          alt="Engenharia e Edificações Urbanas"
+          className="absolute inset-0 w-full h-full object-cover object-center scale-105 brightness-[1.12] contrast-[1.05]"
+          referrerPolicy="no-referrer"
+        />
+        {/* Camada translúcida mais suave para acender os prédios mantendo leitura nítida do texto */}
+        <div className="absolute inset-0 bg-white/65 sm:bg-white/60 lg:bg-gradient-to-r lg:from-white/88 lg:via-white/70 lg:to-white/35 backdrop-brightness-[1.02]" />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -64,7 +48,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBudgetModal }) => {
             </h1>
 
             {/* Supporting Description */}
-            <p className="text-slate-800 text-base sm:text-lg leading-relaxed max-w-xl font-normal">
+            <p className="text-slate-900 text-base sm:text-lg leading-relaxed max-w-xl font-medium">
               Elaboramos laudos periciais, avaliações patrimoniais e pareceres técnicos fundamentados na ABNT para blindar teses de advogados, escritórios e investidores em litígios de alto valor em todo o Brasil.
             </p>
 
@@ -93,19 +77,19 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBudgetModal }) => {
 
           </div>
 
-          {/* Right Column: High-Impact Engineering & Valuation Photo (No text, pure technical visual) */}
+          {/* Right Column: Quadro com imagem escura de engenharia legal e perícias */}
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-200 bg-slate-900 group">
+            <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700/80 bg-slate-950 group">
               <div className="relative h-[380px] sm:h-[450px] w-full overflow-hidden">
                 <img
-                  src={heroTechImage}
+                  src={heroForensicDarkImage}
                   alt="Engenharia Legal e Perícias Técnicas - Callegari Engenharia"
-                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 brightness-[0.98] contrast-[1.05]"
                   referrerPolicy="no-referrer"
                 />
                 
-                {/* Subtle soft lighting overlay for elegance */}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/20 via-transparent to-slate-950/10 pointer-events-none" />
+                {/* Subtle soft lighting overlay for elegance and contrast */}
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-slate-950/20 pointer-events-none" />
               </div>
             </div>
           </div>

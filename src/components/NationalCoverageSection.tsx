@@ -1,5 +1,5 @@
 import React from 'react';
-import { Globe, MapPin, CheckCircle2, Shield } from 'lucide-react';
+import { Globe } from 'lucide-react';
 import coverageBgImage from '../assets/images/coverage_brazil_bg_1787220031506.jpg';
 
 export const NationalCoverageSection: React.FC = () => {
@@ -35,13 +35,6 @@ export const NationalCoverageSection: React.FC = () => {
           <p className="text-slate-200 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto font-normal">
             A Callegari Engenharia possui atuação em todo o território nacional, oferecendo suporte técnico especializado para clientes, advogados e escritórios de advocacia em diferentes regiões do país.
           </p>
-
-          <div className="pt-4">
-            <span className="inline-flex items-center gap-2.5 bg-[#2f5d8f] hover:bg-[#234870] text-white text-xs sm:text-sm font-bold tracking-widest px-8 py-3.5 rounded-full uppercase border border-blue-300/40 shadow-xl transition-all">
-              <CheckCircle2 className="w-4 h-4 text-emerald-400" />
-              <span>ATUAÇÃO EM TODO O TERRITÓRIO NACIONAL</span>
-            </span>
-          </div>
         </div>
 
       </div>
