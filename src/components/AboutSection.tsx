@@ -1,6 +1,6 @@
 import React from 'react';
 import { CheckCircle2, ShieldCheck, ArrowRight } from 'lucide-react';
-import legalEngineeringImg from '../assets/images/legal_engineering_report_1788303678275.jpg';
+import legalEngineeringImg from '../assets/images/legal_engineering.jpeg';
 
 interface AboutSectionProps {
   onNavigateToSeguranca?: () => void;
@@ -23,15 +23,15 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onNavigateToSeguranc
             </div>
 
             <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 font-serif leading-tight">
-              Rigor científico e visão estratégica para demandas que não admitem erros.
+              Rigor científico e visão estratégica para demandas que exigem fundamentação.
             </h2>
 
             <div className="space-y-4 text-slate-700 text-base leading-relaxed">
               <p>
-                Com mais de uma década de atuação, a <strong className="text-slate-900 font-semibold">Callegari Engenharia</strong> combina conhecimento normativo aprofundado e inteligência pericial para atuar na interface exata entre a Engenharia e o Direito.
+                Com mais de uma década de atuação, a <strong className="text-slate-900 font-semibold">Callegari Engenharia</strong> combina conhecimento normativo aprofundado e inteligência pericial para atuar na interface entre a Engenharia e o Direito.
               </p>
               <p>
-                Não entregamos apenas relatórios; entregamos provas técnicas robustas que suportam decisões judiciais e negociações extrajudiciais complexas, reduzindo drasticamente o risco de sucumbência para bancas de advocacia e grandes proprietários.
+                Não entregamos apenas relatórios. Cada trabalho é conduzido com fundamentação normativa e metodologia transparente, para que a prova técnica seja clara, consistente e sustentável no contraditório.
               </p>
             </div>
 
@@ -40,8 +40,8 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onNavigateToSeguranc
               <div className="flex items-start gap-3 p-4 bg-slate-50 rounded-xl border border-slate-200">
                 <CheckCircle2 className="w-5 h-5 text-[#2f5d8f] shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-slate-900 text-sm">Precisão e Fundamentação</h4>
-                  <p className="text-xs text-slate-600 mt-0.5">Aplicação rigorosa das NBRs 14653 e 13752 com inferência estatística e amostragem de mercado auditável.</p>
+                  <h4 className="font-bold text-slate-900 text-sm">Rescisão e Fundamentação</h4>
+                  <p className="text-xs text-slate-600 mt-0.5">Aplicação das normas técnicas pertinentes a cada trabalho, especialmente as ABNT NBR 14653 e 13752, com métodos claros e conclusões fundamentadas.</p>
                 </div>
               </div>
 
@@ -49,7 +49,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onNavigateToSeguranc
                 <CheckCircle2 className="w-5 h-5 text-[#2f5d8f] shrink-0 mt-0.5" />
                 <div>
                   <h4 className="font-bold text-slate-900 text-sm">Responsabilidade & Cumprimento de Prazos</h4>
-                  <p className="text-xs text-slate-600 mt-0.5">Gestão ágil e compromisso com o calendário e quesitamentação processual.</p>
+                  <p className="text-xs text-slate-600 mt-0.5">Gestão ágil e compromisso com os prazos processuais</p>
                 </div>
               </div>
             </div>

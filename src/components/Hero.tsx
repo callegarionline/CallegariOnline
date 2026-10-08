@@ -1,7 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import heroBuildingsImage from '../assets/images/hero_buildings_engineering_1789050587321.jpg';
-import heroForensicDarkImage from '../assets/images/hero_forensic_dark_1789089864272.jpg';
+import camilaCallegariHeroImg from '../assets/images/camila_callegari.jpg';
 
 interface HeroProps {
   onOpenBudgetModal?: () => void;
@@ -49,7 +49,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBudgetModal }) => {
 
             {/* Supporting Description */}
             <p className="text-slate-900 text-base sm:text-lg leading-relaxed max-w-xl font-medium">
-              Elaboramos laudos periciais, avaliações patrimoniais e pareceres técnicos fundamentados na ABNT para blindar teses de advogados, escritórios e investidores em litígios de alto valor em todo o Brasil.
+              Elaboramos laudos periciais, avaliações patrimoniais e pareceres técnicos fundamentados nas normas da ABNT para oferecer respaldo técnico em litígios e decisões patrimoniais de alto valor em todo o Brasil.
             </p>
 
             {/* Action Buttons - Sharp Rectangular Styling */}
@@ -77,19 +77,19 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBudgetModal }) => {
 
           </div>
 
-          {/* Right Column: Quadro com imagem escura de engenharia legal e perícias */}
+          {/* Right Column: Foto de Camila Callegari */}
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-slate-700/80 bg-slate-950 group">
               <div className="relative h-[380px] sm:h-[450px] w-full overflow-hidden">
                 <img
-                  src={heroForensicDarkImage}
-                  alt="Engenharia Legal e Perícias Técnicas - Callegari Engenharia"
-                  className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 brightness-[0.98] contrast-[1.05]"
+                  src={camilaCallegariHeroImg}
+                  alt="Camila Callegari - Engenharia Legal e Avaliações"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
                   referrerPolicy="no-referrer"
                 />
                 
                 {/* Subtle soft lighting overlay for elegance and contrast */}
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/50 via-transparent to-slate-950/20 pointer-events-none" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent pointer-events-none" />
               </div>
             </div>
           </div>

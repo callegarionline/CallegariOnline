@@ -12,14 +12,14 @@ export const TargetAudienceSection: React.FC<TargetAudienceSectionProps> = ({ on
   const targetGroups = [
     {
       title: 'Advogados',
-      description: 'Assistência técnica pericial de ponta a ponta, formulação de quesitos estratégicos e elaboração de pareceres divergentes em processos judiciais.',
+      description: 'Acompanhamento de vistorias, elaboração de quesitos, análise de laudos periciais e produção de laudos e pareceres técnicos para instruir petições iniciais.',
       icon: UserCheck,
       badge: 'Contencioso Cível',
       image: audienceAdvogados
     },
     {
       title: 'Escritórios de Advocacia',
-      description: 'Parceria de longo prazo para reforçar a equipe probatória da banca em demandas imobiliárias, societárias e de direito administrativo/tributário.',
+      description: 'Parcerias de longo prazo para reforçar as teses jurídicas com apoio técnico em demandas imobiliárias e de direito administrativo/tributário',
       icon: Building,
       badge: 'Parceria Estratégica',
       image: audienceEscritorios
@@ -50,7 +50,7 @@ export const TargetAudienceSection: React.FC<TargetAudienceSectionProps> = ({ on
           </h2>
 
           <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-            Soluções sob medida para o contencioso e consultivo de alta complexidade.
+            Soluções técnicas sob medida para demandas judiciais e consultivas de alta complexidade.
           </p>
         </div>
 

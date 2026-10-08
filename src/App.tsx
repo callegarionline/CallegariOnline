@@ -6,7 +6,6 @@ import { AboutSection } from './components/AboutSection';
 import { TargetAudienceSection } from './components/TargetAudienceSection';
 import { ServicesSection } from './components/ServicesSection';
 import { NationalCoverageSection } from './components/NationalCoverageSection';
-import { TestimonialsSection } from './components/TestimonialsSection';
 import { BlogSection } from './components/BlogSection';
 import { ConversionCTA } from './components/ConversionCTA';
 import { Footer } from './components/Footer';
@@ -169,12 +168,7 @@ export default function App() {
             <NationalCoverageSection />
           </motion.div>
 
-          {/* 7. Prova Social (Testimonials) */}
-          <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
-            <TestimonialsSection />
-          </motion.div>
-
-          {/* 8. Blog / Artigos */}
+          {/* 7. Blog / Artigos */}
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.4 }}>
             <BlogSection onNavigateToArtigos={() => handleNavigate('artigos')} />
           </motion.div>

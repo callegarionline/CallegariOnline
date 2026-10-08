@@ -15,7 +15,7 @@ import {
   MessageSquare
 } from 'lucide-react';
 import { COMPANY_INFO } from '../data/companyData';
-import legalEngineeringImg from '../assets/images/legal_engineering_report_1788303678275.jpg';
+import legalEngineeringImg from '../assets/images/legal_engineering.jpeg';
 
 interface SegurancaJuridicaPageProps {
   onBackToHome: () => void;
@@ -119,10 +119,10 @@ export const SegurancaJuridicaPage: React.FC<SegurancaJuridicaPageProps> = ({
 
               <div className="space-y-4 text-slate-700 text-base leading-relaxed">
                 <p>
-                  Com mais de uma década de atuação, a <strong className="text-slate-900 font-semibold">Callegari Engenharia</strong> combina conhecimento normativo aprofundado e inteligência pericial para atuar na interface exata entre a Engenharia e o Direito.
+                  Com mais de uma década de atuação, a <strong className="text-slate-900 font-semibold">Callegari Engenharia</strong> combina conhecimento normativo aprofundado e inteligência pericial para atuar na interface entre a Engenharia e o Direito.
                 </p>
                 <p>
-                  Não entregamos apenas relatórios; entregamos provas técnicas robustas que suportam decisões judiciais e negociações extrajudiciais complexas, reduzindo drasticamente o risco de sucumbência para bancas de advocacia e grandes proprietários.
+                  Não entregamos apenas relatórios. Cada trabalho é conduzido com fundamentação normativa e metodologia transparente, para que a prova técnica seja clara, consistente e sustentável no contraditório.
                 </p>
                 <p>
                   Nossos laudos atendem com grau máximo de fundamentação e precisão às normas da ABNT (NBR 14653 e NBR 13752), utilizando modelos de regressão linear múltipla, inferência estatística, amostragem criteriosa e vistorias detalhadas com tecnologia de ponta.
@@ -134,9 +134,9 @@ export const SegurancaJuridicaPage: React.FC<SegurancaJuridicaPageProps> = ({
                 <div className="flex items-start gap-3.5 p-4 bg-slate-50 rounded-xl border border-slate-200">
                   <CheckCircle2 className="w-5 h-5 text-[#2f5d8f] shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-bold text-slate-900 text-sm">Precisão e Fundamentação</h4>
+                    <h4 className="font-bold text-slate-900 text-sm">Rescisão e Fundamentação</h4>
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                      Aplicação rigorosa das NBRs 14653 e 13752 com inferência estatística e amostragem de mercado auditável.
+                      Aplicação das normas técnicas pertinentes a cada trabalho, especialmente as ABNT NBR 14653 e 13752, com métodos claros e conclusões fundamentadas.
                     </p>
                   </div>
                 </div>
@@ -146,7 +146,7 @@ export const SegurancaJuridicaPage: React.FC<SegurancaJuridicaPageProps> = ({
                   <div>
                     <h4 className="font-bold text-slate-900 text-sm">Responsabilidade & Prazos</h4>
                     <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                      Gestão ágil e compromisso irrestrito com o calendário judicial e quesitamentação processual.
+                      Gestão ágil e compromisso com os prazos processuais
                     </p>
                   </div>
                 </div>

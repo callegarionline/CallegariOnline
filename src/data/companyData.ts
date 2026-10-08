@@ -1,4 +1,6 @@
 import { ServiceItem, CaseStudy, Testimonial, BlogPost, RegionCoverage } from '../types';
+import demarcacaoTerrenosImg from '../assets/images/demarcacao_terrenos.jpg';
+import desapropriacaoParcialImg from '../assets/images/desapropriacao_parcial.jpg';
 
 export const COMPANY_INFO = {
   name: 'Callegari Engenharia',
@@ -77,7 +79,7 @@ export const SERVICES: ServiceItem[] = [
     id: 'assistencia-tecnica-judicial',
     number: '04',
     title: 'Assistência Técnica Judicial',
-    shortDescription: 'Acompanhamento de vistorias, elaboração de quesitos, impugnação de laudos desfavoráveis e pareceres pré-constituídos.',
+    shortDescription: 'Acompanhamento de vistorias, elaboração de quesitos, análise de laudos periciais e produção de laudos e pareceres técnicos para instruir petições iniciais.',
     fullDescription: 'Atuação pericial estratégica em todas as fases do processo judicial. Formulamos quesitos assertivos, participamos das vistorias de campo e elaboramos pareceres técnicos divergentes para embasar as manifestações e teses dos advogados.',
     applications: [
       'Acompanhamento presencial de vistorias e diligências periciais',
@@ -202,7 +204,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: '6 min de leitura',
     date: '20 Set 2026',
     summary: 'Estudo técnico detalhado revela que o método da SPU para definir os limites da União em Conceição da Barra/ES possui falhas graves, ignorando a erosão costeira e usando dados cartográficos defasados.',
-    imageUrl: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&q=80&w=1200',
+    imageUrl: demarcacaoTerrenosImg,
     content: [
       'Você já se perguntou se as taxas de foro e laudêmio cobradas sobre o seu imóvel no litoral são realmente legítimas? A demarcação dos Terrenos de Marinha pela Superintendência do Patrimônio da União (SPU) tem gerado insegurança jurídica e fortes controvérsias em todo o Brasil.',
       'Um estudo técnico detalhado sobre o município de Conceição da Barra/ES revela que o método utilizado para definir os limites da União possui falhas graves, ignorando a erosão costeira e utilizando dados cartográficos desatualizados.',
@@ -307,7 +309,7 @@ export const BLOG_POSTS: BlogPost[] = [
     readTime: '7 min de leitura',
     date: '20 Set 2026',
     summary: 'A desapropriação parcial vai além da área atingida. Veja como a NBR 14653 e a análise do remanescente garantem a justa indenização. Por Camila Callegari.',
-    imageUrl: 'https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&q=80&w=1200',
+    imageUrl: desapropriacaoParcialImg,
     content: [
       'Nas ações e processos administrativos de desapropriação parcial, um dos erros mais comuns e onerosos é calcular a indenização simplesmente multiplicando os metros quadrados desapropriados pelo valor unitário médio do imóvel.',
       'A retirada de uma parcela do terreno não afeta apenas o espaço físico retirado: ela altera drasticamente a geometria, o acesso, a topografia, o potencial construtivo e a vocação econômica de tudo o que permanece com o proprietário.',
