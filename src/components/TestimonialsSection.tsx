@@ -50,9 +50,9 @@ export const TestimonialsSection: React.FC = () => {
                   {test.initials}
                 </div>
                 <div>
-                  <div className="font-bold text-slate-900 text-sm font-serif">{test.name}</div>
-                  <div className="text-xs text-[#2f5d8f] font-semibold">{test.role}</div>
-                  <div className="text-[11px] text-slate-500">{test.organization}</div>
+                  <div className="font-bold text-slate-900 text-base font-serif">{test.name}</div>
+                  <div className="text-sm text-[#2f5d8f] font-semibold">{test.role}</div>
+                  <div className="text-xs text-slate-500 font-medium">{test.organization}</div>
                 </div>
               </div>
             </div>

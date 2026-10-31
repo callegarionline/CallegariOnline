@@ -118,7 +118,7 @@ export const Header: React.FC<HeaderProps> = ({
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
       {/* Top Contact Strip */}
       <div
-        className={`bg-[#2f5d8f] text-white text-xs hidden md:block border-b border-blue-400/20 transition-all duration-300 overflow-hidden ${
+        className={`bg-[#2f5d8f] text-white text-sm hidden md:block border-b border-blue-400/20 transition-all duration-300 overflow-hidden ${
           isScrolled ? 'max-h-0 py-0 opacity-0' : 'max-h-12 py-2 opacity-100'
         }`}
       >
@@ -131,7 +131,7 @@ export const Header: React.FC<HeaderProps> = ({
               rel="noopener noreferrer"
               className="hover:text-blue-200 transition-colors flex items-center gap-2"
             >
-              <MessageSquare className="w-3.5 h-3.5 text-emerald-300" />
+              <MessageSquare className="w-4 h-4 text-emerald-300" />
               <span className="font-semibold">{COMPANY_INFO.phone}</span>
             </a>
             <span className="text-blue-300/60">|</span>
@@ -139,14 +139,14 @@ export const Header: React.FC<HeaderProps> = ({
               href={`mailto:${COMPANY_INFO.email}`}
               className="hover:text-blue-200 transition-colors flex items-center gap-2"
             >
-              <Phone className="w-3.5 h-3.5 text-blue-200" />
+              <Phone className="w-4 h-4 text-blue-200" />
               <span>{COMPANY_INFO.email}</span>
             </a>
           </div>
 
           {/* Social Media Icons on the Right */}
-          <div className="flex items-center gap-1.5">
-            <span className="text-[11px] text-blue-200/80 mr-1 font-normal hidden lg:inline">Redes Sociais:</span>
+          <div className="flex items-center gap-2">
+            <span className="text-xs text-blue-100 mr-1 font-medium hidden lg:inline">Redes Sociais:</span>
             
             {/* Instagram */}
             <a
@@ -241,7 +241,7 @@ export const Header: React.FC<HeaderProps> = ({
             <a
               href="#contato"
               onClick={(e) => scrollToSection(e, '#contato')}
-              className="bg-[#2f5d8f] text-white text-xs font-semibold px-3 py-2 rounded transition-colors mr-1"
+              className="bg-[#2f5d8f] text-white text-sm font-semibold px-3.5 py-2 rounded transition-colors mr-1"
             >
               CONTATO
             </a>

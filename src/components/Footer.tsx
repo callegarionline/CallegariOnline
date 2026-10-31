@@ -15,15 +15,15 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-7 lg:col-span-8 space-y-4">
             <Logo variant="light" className="h-10" />
             
-            <p className="text-xs text-slate-300 font-medium tracking-wide">
+            <p className="text-sm text-slate-200 font-medium tracking-wide">
               Engenharia Legal | Avaliações | Perícias | Desapropriações | Servidões
             </p>
 
-            <p className="text-xs text-slate-400 leading-relaxed max-w-lg font-normal">
+            <p className="text-sm text-slate-300 leading-relaxed max-w-lg font-normal">
               Soluções especializadas em engenharia de avaliações e perícias com foco na entrega de laudos precisos e suporte técnico para demandas judiciais e extrajudiciais.
             </p>
 
-            <div className="inline-flex items-center gap-2 text-[11px] text-blue-200 bg-slate-900 border border-slate-700 px-3 py-1.5 font-mono rounded-md">
+            <div className="inline-flex items-center gap-2 text-xs text-blue-200 bg-slate-900 border border-slate-700 px-3.5 py-2 font-mono rounded-md">
               <ShieldCheck className="w-4 h-4 text-[#60a5fa]" />
               <span>CERTIFICAÇÃO AAA EM ENGENHARIA DE AVALIAÇÕES</span>
             </div>
@@ -33,16 +33,16 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-5 lg:col-span-4 space-y-6 md:pl-6 lg:pl-10">
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <div className="p-2 bg-[#2f5d8f] text-white rounded-lg shadow-sm">
+                <div className="p-2.5 bg-[#2f5d8f] text-white rounded-lg shadow-sm">
                   <Phone className="w-4 h-4" />
                 </div>
                 <div>
-                  <span className="text-[10px] uppercase font-bold text-slate-400 block">WhatsApp Direct</span>
+                  <span className="text-xs uppercase font-bold text-slate-400 block mb-0.5">WhatsApp Direct</span>
                   <a
                     href={`https://wa.me/${COMPANY_INFO.rawPhone}?text=${encodeURIComponent(COMPANY_INFO.defaultWhatsappMessage)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-bold text-white hover:text-[#60a5fa] transition-colors"
+                    className="text-base font-bold text-white hover:text-[#60a5fa] transition-colors"
                   >
                     {COMPANY_INFO.phone}
                   </a>
@@ -50,14 +50,14 @@ export const Footer: React.FC = () => {
               </div>
 
               <div className="flex items-center gap-3">
-                <div className="p-2 bg-[#2f5d8f] text-white rounded-lg shadow-sm">
+                <div className="p-2.5 bg-[#2f5d8f] text-white rounded-lg shadow-sm">
                   <Mail className="w-4 h-4" />
                 </div>
                 <div>
-                  <span className="text-[10px] uppercase font-bold text-slate-400 block">E-mail Corporativo</span>
+                  <span className="text-xs uppercase font-bold text-slate-400 block mb-0.5">E-mail Corporativo</span>
                   <a
                     href={`mailto:${COMPANY_INFO.email}`}
-                    className="text-xs font-bold text-white hover:text-[#60a5fa] transition-colors"
+                    className="text-sm font-bold text-white hover:text-[#60a5fa] transition-colors"
                   >
                     {COMPANY_INFO.email}
                   </a>
@@ -67,7 +67,7 @@ export const Footer: React.FC = () => {
 
             {/* Redes Sociais */}
             <div className="pt-2 border-t border-slate-800">
-              <span className="text-[11px] uppercase tracking-wider font-semibold text-slate-400 block mb-3 font-mono">
+              <span className="text-xs uppercase tracking-wider font-semibold text-slate-300 block mb-3 font-mono">
                 Redes Sociais
               </span>
               <div className="flex items-center gap-2">
@@ -115,7 +115,7 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Bottom Copyright */}
-        <div className="pt-6 border-t-2 border-[#2f5d8f]/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-300 font-medium">
+        <div className="pt-6 border-t-2 border-[#2f5d8f]/60 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-slate-300 font-medium">
           <p>© 2026 Callegari Engenharia. Todos os direitos reservados.</p>
         </div>
 

@@ -20,13 +20,13 @@ export const BudgetPage: React.FC<BudgetPageProps> = ({ onBackToHome }) => {
         <div className="mb-8 flex items-center justify-between flex-wrap gap-4">
           <button
             onClick={onBackToHome}
-            className="inline-flex items-center gap-2 text-xs font-bold text-[#2f5d8f] hover:text-[#234870] uppercase tracking-wider bg-white px-4 py-2.5 rounded-lg border border-slate-200 shadow-sm transition-all hover:shadow-md cursor-pointer"
+            className="inline-flex items-center gap-2 text-sm font-bold text-[#2f5d8f] hover:text-[#234870] uppercase tracking-wider bg-white px-5 py-3 rounded-lg border border-slate-200 shadow-sm transition-all hover:shadow-md cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Voltar para a Página Principal</span>
           </button>
 
-          <div className="flex items-center gap-2 text-xs text-slate-500 font-mono">
+          <div className="flex items-center gap-2 text-sm text-slate-500 font-mono">
             <span className="hover:underline cursor-pointer" onClick={onBackToHome}>
               Home
             </span>
@@ -40,7 +40,7 @@ export const BudgetPage: React.FC<BudgetPageProps> = ({ onBackToHome }) => {
           <div className="absolute inset-0 bg-blueprint-pattern opacity-10 pointer-events-none" />
           
           <div className="relative z-10 max-w-3xl space-y-4">
-            <div className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-[#60a5fa] uppercase font-mono">
+            <div className="inline-flex items-center gap-2 text-sm font-bold tracking-widest text-[#60a5fa] uppercase font-mono">
               <FileSpreadsheet className="w-4 h-4" />
               PÁGINA INTERNA DE SOLICITAÇÃO TÉCNICA
             </div>
@@ -49,12 +49,12 @@ export const BudgetPage: React.FC<BudgetPageProps> = ({ onBackToHome }) => {
               Análise de Demanda & Orçamento Personalizado
             </h1>
 
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            <p className="text-slate-300 text-base sm:text-lg leading-relaxed">
               Solicite um orçamento técnico especializado para ações judiciais, extrajudiciais, pareceres assistenciais e engenharia de avaliações. Sua solicitação é analisada diretamente pela equipe técnica da Callegari Engenharia.
             </p>
 
-            <div className="pt-2 flex flex-wrap gap-4 text-xs font-medium text-slate-300">
-              <span className="flex items-center gap-1.5 bg-slate-800 px-3 py-1.5 rounded border border-slate-700">
+            <div className="pt-2 flex flex-wrap gap-4 text-sm font-medium text-slate-300">
+              <span className="flex items-center gap-1.5 bg-slate-800 px-3.5 py-2 rounded-lg border border-slate-700">
                 <ShieldCheck className="w-4 h-4 text-emerald-400" />
                 Sigilo Absoluto e Confidencialidade
               </span>

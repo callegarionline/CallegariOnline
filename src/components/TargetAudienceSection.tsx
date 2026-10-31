@@ -39,7 +39,7 @@ export const TargetAudienceSection: React.FC<TargetAudienceSectionProps> = ({ on
         
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
-          <div className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-[#2f5d8f] uppercase">
+          <div className="inline-flex items-center gap-2 text-sm font-bold tracking-widest text-[#2f5d8f] uppercase">
             <span className="w-6 h-0.5 bg-[#2f5d8f]" />
             PÚBLICO-ALVO
             <span className="w-6 h-0.5 bg-[#2f5d8f]" />
@@ -49,7 +49,7 @@ export const TargetAudienceSection: React.FC<TargetAudienceSectionProps> = ({ on
             Suporte técnico especializado para quem precisa fundamentar, contestar e decidir com segurança.
           </h2>
 
-          <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+          <p className="text-slate-600 text-base leading-relaxed">
             Soluções técnicas sob medida para demandas judiciais e consultivas de alta complexidade.
           </p>
         </div>
@@ -78,7 +78,7 @@ export const TargetAudienceSection: React.FC<TargetAudienceSectionProps> = ({ on
                       <div className="p-2.5 bg-[#2f5d8f] text-white rounded-lg shadow-md">
                         <Icon className="w-5 h-5" />
                       </div>
-                      <span className="text-[10px] font-bold text-white uppercase tracking-wider bg-black/60 backdrop-blur-md px-3 py-1 rounded-full border border-white/20">
+                      <span className="text-xs font-bold text-white uppercase tracking-wider bg-black/60 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/20">
                         {group.badge}
                       </span>
                     </div>
@@ -92,7 +92,7 @@ export const TargetAudienceSection: React.FC<TargetAudienceSectionProps> = ({ on
 
                   {/* Card Content Body */}
                   <div className="p-6 space-y-3">
-                    <p className="text-sm text-slate-700 leading-relaxed font-normal">
+                    <p className="text-base text-slate-700 leading-relaxed font-normal">
                       {group.description}
                     </p>
                   </div>
@@ -109,7 +109,7 @@ export const TargetAudienceSection: React.FC<TargetAudienceSectionProps> = ({ on
                       }
                       if (onOpenBudgetModal) onOpenBudgetModal();
                     }}
-                    className="w-full inline-flex items-center justify-between text-xs font-bold text-[#2f5d8f] hover:text-[#244973] uppercase tracking-wider py-2 group-hover:underline"
+                    className="w-full inline-flex items-center justify-between text-sm font-bold text-[#2f5d8f] hover:text-[#244973] uppercase tracking-wider py-2 group-hover:underline"
                   >
                     <span>Solicitar Análise de Demanda</span>
                     <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />

@@ -37,8 +37,8 @@ export const DifferentialsSection: React.FC = () => {
         
         {/* Section Header - Centered */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-100/80 border border-blue-300/60 text-[#2f5d8f] text-xs font-mono font-bold tracking-widest uppercase">
-            <Sparkles className="w-3.5 h-3.5 text-[#2f5d8f]" />
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100/80 border border-blue-300/60 text-[#2f5d8f] text-sm font-mono font-bold tracking-widest uppercase">
+            <Sparkles className="w-4 h-4 text-[#2f5d8f]" />
             <span>NOSSO DIFERENCIAL</span>
           </div>
 
@@ -74,7 +74,7 @@ export const DifferentialsSection: React.FC = () => {
                 </div>
 
                 {/* Badge Tag */}
-                <span className="text-[10px] font-mono font-bold text-[#2f5d8f] uppercase tracking-wider bg-blue-50 border border-blue-200/80 px-2.5 py-1 rounded-full mb-3">
+                <span className="text-xs font-mono font-bold text-[#2f5d8f] uppercase tracking-wider bg-blue-50 border border-blue-200/80 px-3 py-1 rounded-full mb-3">
                   {config.badge}
                 </span>
 
@@ -84,7 +84,7 @@ export const DifferentialsSection: React.FC = () => {
                 </h3>
 
                 {/* Description */}
-                <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
+                <p className="text-slate-600 text-sm sm:text-base leading-relaxed font-normal">
                   {diff.description}
                 </p>
 
@@ -103,7 +103,7 @@ export const DifferentialsSection: React.FC = () => {
           <blockquote className="text-xl sm:text-2xl font-serif font-bold text-[#2f5d8f] leading-snug relative z-10 italic max-w-2xl mx-auto">
             "Entender o problema é o primeiro passo para entregar a solução certa."
           </blockquote>
-          <p className="text-xs font-mono font-bold uppercase tracking-widest text-slate-500 mt-4">
+          <p className="text-sm font-mono font-bold uppercase tracking-widest text-slate-600 mt-4">
             — Filosofia de Trabalho Callegari Engenharia
           </p>
         </div>

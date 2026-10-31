@@ -30,7 +30,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onOpenBudget
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
-          <div className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-[#2f5d8f] uppercase">
+          <div className="inline-flex items-center gap-2 text-sm font-bold tracking-widest text-[#2f5d8f] uppercase">
             <span className="w-6 h-0.5 bg-[#2f5d8f]" />
             PORTFÓLIO & CASOS DE ATUAÇÃO
             <span className="w-6 h-0.5 bg-[#2f5d8f]" />
@@ -40,7 +40,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onOpenBudget
             Experiência aplicada a diferentes desafios.
           </h2>
 
-          <p className="text-slate-600 text-base leading-relaxed">
+          <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
             Apresentação de casos técnicos estruturados exemplificando metodologias de avaliação e suporte pericial aplicadas a demandas judiciais e extrajudiciais.
           </p>
         </div>
@@ -57,10 +57,10 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onOpenBudget
 
               <div>
                 <div className="flex items-center justify-between mb-5">
-                  <span className="text-[11px] font-bold text-white bg-[#2f5d8f] uppercase tracking-wider px-3 py-1 rounded shadow-sm">
+                  <span className="text-xs font-bold text-white bg-[#2f5d8f] uppercase tracking-wider px-3.5 py-1.5 rounded shadow-sm">
                     {caseItem.type}
                   </span>
-                  <span className="text-[11px] font-mono font-bold text-slate-600 bg-slate-100 px-2.5 py-1 rounded">
+                  <span className="text-xs font-mono font-bold text-slate-700 bg-slate-100 px-3 py-1.5 rounded">
                     {caseItem.badge}
                   </span>
                 </div>
@@ -69,8 +69,8 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onOpenBudget
                   {caseItem.title}
                 </h3>
 
-                <div className="space-y-3 text-xs text-slate-600 mb-6">
-                  <div className="flex items-center gap-1.5 font-semibold text-[#2f5d8f]">
+                <div className="space-y-3 text-sm text-slate-700 mb-6">
+                  <div className="flex items-center gap-1.5 font-bold text-[#2f5d8f]">
                     <span>Área: {caseItem.area}</span>
                   </div>
                   <div>
@@ -83,7 +83,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onOpenBudget
               <div className="pt-4 border-t border-slate-100">
                 <button
                   onClick={() => setSelectedCase(caseItem)}
-                  className="w-full inline-flex items-center justify-between text-xs font-bold text-[#2f5d8f] group-hover:text-[#234870] uppercase tracking-wider py-1"
+                  className="w-full inline-flex items-center justify-between text-sm font-bold text-[#2f5d8f] group-hover:text-[#234870] uppercase tracking-wider py-1.5"
                 >
                   <span>VER SOLUÇÃO TÉCNICA</span>
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -108,33 +108,33 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onOpenBudget
             </button>
 
             <div className="flex items-center gap-2 mb-3">
-              <span className="text-xs font-mono bg-[#2f5d8f] text-white font-bold px-2.5 py-1 rounded">
+              <span className="text-sm font-mono bg-[#2f5d8f] text-white font-bold px-3 py-1 rounded">
                 {selectedCase.type}
               </span>
-              <span className="text-xs font-semibold text-slate-500">{selectedCase.area}</span>
+              <span className="text-sm font-semibold text-slate-600">{selectedCase.area}</span>
             </div>
 
             <h3 className="text-2xl font-bold font-serif text-slate-900 mb-4">
               {selectedCase.title}
             </h3>
 
-            <div className="space-y-4 text-xs sm:text-sm text-slate-700">
+            <div className="space-y-4 text-sm sm:text-base text-slate-700">
               <div className="p-4 bg-slate-50 rounded-lg border border-slate-200">
-                <h4 className="font-bold text-slate-900 uppercase tracking-wide text-xs mb-1 text-[#2f5d8f]">
+                <h4 className="font-bold uppercase tracking-wide text-sm mb-1 text-[#2f5d8f]">
                   Desafio Apresentado:
                 </h4>
                 <p className="leading-relaxed">{selectedCase.challenge}</p>
               </div>
 
               <div className="p-4 bg-slate-50 rounded-lg border border-slate-200">
-                <h4 className="font-bold text-slate-900 uppercase tracking-wide text-xs mb-1 text-[#2f5d8f]">
+                <h4 className="font-bold uppercase tracking-wide text-sm mb-1 text-[#2f5d8f]">
                   Solução Técnica Aplicada:
                 </h4>
                 <p className="leading-relaxed">{selectedCase.solution}</p>
               </div>
 
               <div className="p-4 bg-emerald-50 rounded-lg border border-emerald-200 text-emerald-900">
-                <h4 className="font-bold uppercase tracking-wide text-xs mb-1 text-emerald-800 flex items-center gap-1.5">
+                <h4 className="font-bold uppercase tracking-wide text-sm mb-1 text-emerald-800 flex items-center gap-1.5">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600" />
                   Resultado Alcançado:
                 </h4>
@@ -143,7 +143,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onOpenBudget
             </div>
 
             <div className="mt-6 pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <span className="text-xs text-slate-500">
+              <span className="text-sm text-slate-600">
                 Estratégia personalizada para demandas jurídicas
               </span>
               <a
@@ -153,7 +153,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onOpenBudget
                   scrollToSection(e, '#orcamento');
                   if (onOpenBudgetModal) onOpenBudgetModal();
                 }}
-                className="w-full sm:w-auto bg-[#2f5d8f] hover:bg-[#244973] text-white text-xs font-bold px-5 py-2.5 rounded transition-all uppercase tracking-wider text-center"
+                className="w-full sm:w-auto bg-[#2f5d8f] hover:bg-[#244973] text-white text-sm font-bold px-5 py-2.5 rounded transition-all uppercase tracking-wider text-center"
               >
                 Analisar Minha Demanda
               </a>

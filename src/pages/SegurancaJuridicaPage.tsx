@@ -46,13 +46,13 @@ export const SegurancaJuridicaPage: React.FC<SegurancaJuridicaPageProps> = ({
         <div className="mb-8 flex items-center justify-between flex-wrap gap-4">
           <button
             onClick={onBackToHome}
-            className="inline-flex items-center gap-2 text-xs font-bold text-[#2f5d8f] hover:text-[#234870] uppercase tracking-wider bg-white px-4 py-2.5 rounded-lg border border-slate-200 shadow-sm transition-all hover:shadow-md cursor-pointer"
+            className="inline-flex items-center gap-2 text-sm font-bold text-[#2f5d8f] hover:text-[#234870] uppercase tracking-wider bg-white px-5 py-3 rounded-lg border border-slate-200 shadow-sm transition-all hover:shadow-md cursor-pointer"
           >
             <ArrowLeft className="w-4 h-4" />
             <span>Voltar para a Página Principal</span>
           </button>
 
-          <div className="flex items-center gap-2 text-xs text-slate-500 font-mono">
+          <div className="flex items-center gap-2 text-sm text-slate-500 font-mono">
             <span className="hover:underline cursor-pointer" onClick={onBackToHome}>
               Home
             </span>
@@ -67,8 +67,8 @@ export const SegurancaJuridicaPage: React.FC<SegurancaJuridicaPageProps> = ({
           <div className="absolute -right-20 -bottom-20 w-96 h-96 bg-[#2f5d8f]/30 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative z-10 max-w-4xl space-y-5">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-xs font-mono font-bold tracking-widest uppercase">
-              <Scale className="w-3.5 h-3.5 text-blue-300" />
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-300 text-sm font-mono font-bold tracking-widest uppercase">
+              <Scale className="w-4 h-4 text-blue-300" />
               <span>SEGURANÇA JURÍDICA & PROTEÇÃO PATRIMONIAL</span>
             </div>
 
@@ -108,7 +108,7 @@ export const SegurancaJuridicaPage: React.FC<SegurancaJuridicaPageProps> = ({
             
             {/* Left Content */}
             <div className="lg:col-span-7 space-y-6">
-              <div className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-[#2f5d8f] uppercase">
+              <div className="inline-flex items-center gap-2 text-sm font-bold tracking-widest text-[#2f5d8f] uppercase">
                 <span className="w-8 h-0.5 bg-[#2f5d8f]" />
                 FUNDAMENTAÇÃO TÉCNICA E NORMATIVA
               </div>
@@ -134,8 +134,8 @@ export const SegurancaJuridicaPage: React.FC<SegurancaJuridicaPageProps> = ({
                 <div className="flex items-start gap-3.5 p-4 bg-slate-50 rounded-xl border border-slate-200">
                   <CheckCircle2 className="w-5 h-5 text-[#2f5d8f] shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-bold text-slate-900 text-sm">Rescisão e Fundamentação</h4>
-                    <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                    <h4 className="font-bold text-slate-900 text-base">Rescisão e Fundamentação</h4>
+                    <p className="text-sm text-slate-600 mt-1 leading-relaxed">
                       Aplicação das normas técnicas pertinentes a cada trabalho, especialmente as ABNT NBR 14653 e 13752, com métodos claros e conclusões fundamentadas.
                     </p>
                   </div>
@@ -144,8 +144,8 @@ export const SegurancaJuridicaPage: React.FC<SegurancaJuridicaPageProps> = ({
                 <div className="flex items-start gap-3.5 p-4 bg-slate-50 rounded-xl border border-slate-200">
                   <CheckCircle2 className="w-5 h-5 text-[#2f5d8f] shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-bold text-slate-900 text-sm">Responsabilidade & Prazos</h4>
-                    <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                    <h4 className="font-bold text-slate-900 text-base">Responsabilidade & Prazos</h4>
+                    <p className="text-sm text-slate-600 mt-1 leading-relaxed">
                       Gestão ágil e compromisso com os prazos processuais
                     </p>
                   </div>
@@ -154,8 +154,8 @@ export const SegurancaJuridicaPage: React.FC<SegurancaJuridicaPageProps> = ({
                 <div className="flex items-start gap-3.5 p-4 bg-slate-50 rounded-xl border border-slate-200">
                   <FileCheck2 className="w-5 h-5 text-[#2f5d8f] shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-bold text-slate-900 text-sm">Quesitos Estratégicos</h4>
-                    <p className="text-xs text-slate-600 mt-1 leading-relaxed">
+                    <h4 className="font-bold text-slate-900 text-base">Quesitos Estratégicos</h4>
+                    <p className="text-sm text-slate-600 mt-1 leading-relaxed">
                       Elaboração de quesitos direcionados e manifestações técnicas sobre laudos periciais judiciais adversos.
                     </p>
                   </div>
@@ -164,9 +164,9 @@ export const SegurancaJuridicaPage: React.FC<SegurancaJuridicaPageProps> = ({
                 <div className="flex items-start gap-3.5 p-4 bg-slate-50 rounded-xl border border-slate-200">
                   <Award className="w-5 h-5 text-[#2f5d8f] shrink-0 mt-0.5" />
                   <div>
-                    <h4 className="font-bold text-slate-900 text-sm">Certificação de Excelência</h4>
-                    <p className="text-xs text-slate-600 mt-1 leading-relaxed">
-                      Certificação AA em Engenharia de Avaliações e Perícias pelo IBAPE, máxima distinção do setor.
+                    <h4 className="font-bold text-slate-900 text-base">Certificação de Excelência</h4>
+                    <p className="text-sm text-slate-600 mt-1 leading-relaxed">
+                      Certificação AAA em Engenharia de Avaliações e Perícias pelo IBAPE, máxima distinção do setor.
                     </p>
                   </div>
                 </div>
@@ -191,10 +191,10 @@ export const SegurancaJuridicaPage: React.FC<SegurancaJuridicaPageProps> = ({
                       <ShieldCheck className="w-5 h-5" />
                     </div>
                     <div>
-                      <h4 className="text-xs font-bold uppercase tracking-wider text-blue-200">
+                      <h4 className="text-sm font-bold uppercase tracking-wider text-blue-200">
                         Engenharia Legal & Avaliações
                       </h4>
-                      <p className="text-xs text-slate-300 font-normal mt-0.5">
+                      <p className="text-sm text-slate-200 font-normal mt-0.5">
                         Rigor técnico e suporte probatório em todo o território nacional.
                       </p>
                     </div>

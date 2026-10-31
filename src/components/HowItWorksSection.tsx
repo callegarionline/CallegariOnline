@@ -29,7 +29,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({ onOpenBudg
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-[#2f5d8f] uppercase">
+          <div className="inline-flex items-center gap-2 text-sm font-bold tracking-widest text-[#2f5d8f] uppercase">
             <span className="w-6 h-0.5 bg-[#2f5d8f]" />
             PASSO A PASSO
             <span className="w-6 h-0.5 bg-[#2f5d8f]" />
@@ -39,7 +39,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({ onOpenBudg
             Como Funciona
           </h2>
 
-          <p className="text-slate-600 text-base leading-relaxed">
+          <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
             Fluxo simplificado e transparente desde o primeiro contato até a entrega do laudo pericial ou parecer técnico.
           </p>
         </div>
@@ -67,7 +67,7 @@ export const HowItWorksSection: React.FC<HowItWorksSectionProps> = ({ onOpenBudg
                     {step.title}
                   </h3>
 
-                  <p className="text-xs text-slate-600 leading-relaxed">
+                  <p className="text-sm text-slate-600 leading-relaxed">
                     {step.description}
                   </p>
                 </div>

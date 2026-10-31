@@ -13,7 +13,7 @@ export const FloatingWhatsApp: React.FC = () => {
     <div className="fixed bottom-6 right-6 z-50 flex items-end gap-3 select-none">
       {/* Tooltip Badge */}
       {showTooltip && (
-        <div className="hidden sm:flex items-center gap-2 bg-white text-slate-900 border border-slate-200 px-3.5 py-2 rounded-lg shadow-xl text-xs font-semibold animate-fadeIn relative">
+        <div className="hidden sm:flex items-center gap-2 bg-white text-slate-900 border border-slate-200 px-4 py-2.5 rounded-lg shadow-xl text-sm font-semibold animate-fadeIn relative">
           <button
             onClick={() => setShowTooltip(false)}
             className="text-slate-400 hover:text-slate-700 ml-1"

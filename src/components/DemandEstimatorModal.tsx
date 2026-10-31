@@ -84,7 +84,7 @@ Gostaria de solicitar orçamento e prazo para esta demanda.`;
           <X className="w-5 h-5" />
         </button>
 
-        <div className="flex items-center gap-2 text-xs font-bold font-mono text-[#2f5d8f] uppercase mb-2">
+        <div className="flex items-center gap-2 text-sm font-bold font-mono text-[#2f5d8f] uppercase mb-2">
           <Calculator className="w-4 h-4" />
           SIMULADOR DE ESCOPO TÉCNICO PARA ADVOGADOS
         </div>
@@ -92,20 +92,20 @@ Gostaria de solicitar orçamento e prazo para esta demanda.`;
         <h3 className="text-2xl font-bold font-serif text-slate-900 mb-2">
           Estruturador de Estratégia Pericial
         </h3>
-        <p className="text-xs text-slate-600 mb-6">
+        <p className="text-sm text-slate-600 mb-6">
           Selecione os parâmetros da demanda processual para visualizar as normas ABNT aplicáveis, a metodologia recomendada e o escopo do laudo.
         </p>
 
         {/* Inputs */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
           <div>
-            <label className="block text-[11px] font-bold text-slate-700 uppercase mb-1">
+            <label className="block text-xs sm:text-sm font-bold text-slate-700 uppercase mb-1.5">
               Objeto / Tipo de Ação
             </label>
             <select
               value={demandType}
               onChange={(e) => setDemandType(e.target.value)}
-              className="w-full text-xs font-medium p-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-[#2f5d8f] bg-slate-50 outline-none"
+              className="w-full text-sm font-medium p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-[#2f5d8f] bg-slate-50 outline-none"
             >
               <option value="Laudo Pericial Judicial">Laudo Pericial Judicial</option>
               <option value="Desapropriação / Servidão">Desapropriação / Servidão</option>
@@ -116,13 +116,13 @@ Gostaria de solicitar orçamento e prazo para esta demanda.`;
           </div>
 
           <div>
-            <label className="block text-[11px] font-bold text-slate-700 uppercase mb-1">
+            <label className="block text-xs sm:text-sm font-bold text-slate-700 uppercase mb-1.5">
               Tipo de Imóvel / Bem
             </label>
             <select
               value={propertyType}
               onChange={(e) => setPropertyType(e.target.value)}
-              className="w-full text-xs font-medium p-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-[#2f5d8f] bg-slate-50 outline-none"
+              className="w-full text-sm font-medium p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-[#2f5d8f] bg-slate-50 outline-none"
             >
               <option value="Imóvel Urbano / Comercial">Imóvel Urbano / Comercial</option>
               <option value="Propriedade Rural / Gleba">Propriedade Rural / Gleba</option>
@@ -132,13 +132,13 @@ Gostaria de solicitar orçamento e prazo para esta demanda.`;
           </div>
 
           <div>
-            <label className="block text-[11px] font-bold text-slate-700 uppercase mb-1">
+            <label className="block text-xs sm:text-sm font-bold text-slate-700 uppercase mb-1.5">
               Urgência do Prazo
             </label>
             <select
               value={urgency}
               onChange={(e) => setUrgency(e.target.value)}
-              className="w-full text-xs font-medium p-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-[#2f5d8f] bg-slate-50 outline-none"
+              className="w-full text-sm font-medium p-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-[#2f5d8f] bg-slate-50 outline-none"
             >
               <option value="Prazo Normal (15 a 30 dias)">Prazo Normal (15 a 30 dias)</option>
               <option value="Urgente (Prazo Judicial de 15 dias)">Urgente (Prazo Judicial de 15 dias)</option>
@@ -150,28 +150,28 @@ Gostaria de solicitar orçamento e prazo para esta demanda.`;
         {/* Output Strategy Summary */}
         <div className="bg-slate-900 text-white rounded-xl p-6 space-y-4 mb-6 border border-slate-800">
           <div className="flex items-center justify-between border-b border-slate-800 pb-3">
-            <span className="text-xs font-mono text-[#60a5fa] font-bold uppercase">
+            <span className="text-sm font-mono text-[#60a5fa] font-bold uppercase">
               PLANO DE ABORDAGEM TÉCNICA SUGERIDO
             </span>
-            <span className="text-[10px] font-mono bg-[#2f5d8f] text-white px-2 py-0.5 rounded">
-              CERTIFICAÇÃO AA
+            <span className="text-xs font-mono bg-[#2f5d8f] text-white px-2.5 py-1 rounded">
+              CERTIFICAÇÃO AAA
             </span>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
             <div>
-              <span className="text-slate-400 font-mono block mb-0.5">METODOLOGIA RECOMENDADA:</span>
+              <span className="text-slate-400 font-mono block mb-1">METODOLOGIA RECOMENDADA:</span>
               <span className="font-bold text-slate-100">{strategy.method}</span>
             </div>
             <div>
-              <span className="text-slate-400 font-mono block mb-0.5">NORMA ABNT DE REFERÊNCIA:</span>
+              <span className="text-slate-400 font-mono block mb-1">NORMA ABNT DE REFERÊNCIA:</span>
               <span className="font-bold text-blue-300">{strategy.norm}</span>
             </div>
           </div>
 
           <div className="pt-2 border-t border-slate-800">
-            <span className="text-slate-400 font-mono text-xs block mb-1">CHECKLIST DE ENTREGÁVEIS TÉCNICOS:</span>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-slate-300">
+            <span className="text-slate-400 font-mono text-sm block mb-2">CHECKLIST DE ENTREGÁVEIS TÉCNICOS:</span>
+            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-slate-300">
               {strategy.keyChecklist.map((item, i) => (
                 <li key={i} className="flex items-center gap-2">
                   <Check className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
@@ -191,14 +191,14 @@ Gostaria de solicitar orçamento e prazo para esta demanda.`;
               const el = document.querySelector('#orcamento');
               if (el) el.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="w-full sm:w-auto border border-slate-300 hover:border-[#2f5d8f] text-slate-800 text-xs font-bold px-5 py-3 rounded-md transition-colors uppercase"
+            className="w-full sm:w-auto border border-slate-300 hover:border-[#2f5d8f] text-slate-800 text-sm font-bold px-6 py-3 rounded-md transition-colors uppercase"
           >
             Preencher Formulário Oficial
           </button>
 
           <button
             onClick={handleWhatsappSend}
-            className="w-full sm:w-auto bg-[#2f5d8f] hover:bg-[#244973] text-white text-xs font-bold px-6 py-3 rounded-md transition-colors flex items-center justify-center gap-2 uppercase shadow"
+            className="w-full sm:w-auto bg-[#2f5d8f] hover:bg-[#244973] text-white text-sm font-bold px-6 py-3.5 rounded-md transition-colors flex items-center justify-center gap-2 uppercase shadow"
           >
             <MessageSquare className="w-4 h-4 text-emerald-300" />
             <span>Enviar Esta Simulação Pelo WhatsApp</span>

@@ -214,42 +214,42 @@ export const ArtigosPage: React.FC<ArtigosPageProps> = ({
                       loading="lazy"
                       referrerPolicy="no-referrer"
                     />
-                    <div className="absolute top-2.5 left-2.5 bg-[#2f5d8f] text-white text-[10px] font-bold tracking-wider px-2 py-0.5 rounded shadow max-w-[85%] truncate">
+                    <div className="absolute top-2.5 left-2.5 bg-[#2f5d8f] text-white text-xs font-bold tracking-wider px-2.5 py-1 rounded shadow max-w-[85%] truncate">
                       {post.category}
                     </div>
                   </div>
 
                   {/* Content Container */}
-                  <div className="p-4 space-y-2.5">
-                    <div className="flex items-center gap-2 text-[11px] text-slate-400 font-medium">
-                      <span className="flex items-center gap-1">
-                        <Calendar className="w-3 h-3" />
+                  <div className="p-5 space-y-3">
+                    <div className="flex items-center gap-2 text-xs text-slate-500 font-medium">
+                      <span className="flex items-center gap-1.5">
+                        <Calendar className="w-3.5 h-3.5 text-[#2f5d8f]" />
                         {post.date}
                       </span>
                       <span>•</span>
-                      <span className="flex items-center gap-1">
-                        <Clock className="w-3 h-3" />
+                      <span className="flex items-center gap-1.5">
+                        <Clock className="w-3.5 h-3.5 text-[#2f5d8f]" />
                         {post.readTime}
                       </span>
                     </div>
 
-                    <h2 className="text-sm font-bold text-slate-900 font-serif leading-snug group-hover:text-[#2f5d8f] transition-colors">
+                    <h2 className="text-base sm:text-lg font-bold text-slate-900 font-serif leading-snug group-hover:text-[#2f5d8f] transition-colors">
                       {post.title}
                     </h2>
 
-                    <p className="text-xs text-slate-600 line-clamp-3 leading-relaxed font-normal">
+                    <p className="text-sm text-slate-600 line-clamp-3 leading-relaxed font-normal">
                       {post.summary}
                     </p>
                   </div>
                 </div>
 
-                <div className="p-4 pt-0">
+                <div className="p-5 pt-0">
                   <button
                     onClick={() => setSelectedPost(post)}
-                    className="w-full inline-flex items-center justify-between text-xs font-bold text-[#2f5d8f] hover:text-[#244973] uppercase tracking-wider py-2.5 border-t border-slate-100 cursor-pointer group-hover:border-blue-100"
+                    className="w-full inline-flex items-center justify-between text-sm font-bold text-[#2f5d8f] hover:text-[#244973] uppercase tracking-wider py-2.5 border-t border-slate-100 cursor-pointer group-hover:border-blue-100"
                   >
                     <span>LER ARTIGO</span>
-                    <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </button>
                 </div>
               </article>
@@ -279,10 +279,10 @@ export const ArtigosPage: React.FC<ArtigosPageProps> = ({
           <div className="mt-12 text-center">
             <button
               onClick={handleLoadMore}
-              className="inline-flex items-center gap-3 bg-[#2f5d8f] hover:bg-[#234870] text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-8 py-4 rounded-xl shadow-md hover:shadow-lg transition-all cursor-pointer group"
+              className="inline-flex items-center gap-3 bg-[#2f5d8f] hover:bg-[#234870] text-white text-sm sm:text-base font-bold uppercase tracking-wider px-8 py-4 rounded-xl shadow-md hover:shadow-lg transition-all cursor-pointer group"
             >
               <span>MOSTRAR MAIS ARTIGOS</span>
-              <span className="bg-blue-800/60 px-2 py-0.5 rounded text-[11px] font-mono">
+              <span className="bg-blue-800/60 px-2.5 py-1 rounded text-xs font-mono">
                 +{filteredPosts.length - visibleCount} restantes
               </span>
               <ChevronDown className="w-4 h-4 transition-transform group-hover:translate-y-0.5" />
@@ -370,14 +370,14 @@ export const ArtigosPage: React.FC<ArtigosPageProps> = ({
               />
             </div>
 
-            <div className="space-y-4 text-slate-700 text-sm leading-relaxed font-normal">
+            <div className="space-y-4 text-slate-700 text-base leading-relaxed font-normal">
               {selectedPost.content.map((paragraph, pIdx) => {
                 // Seção com Emoji / Cabeçalho
                 if (/^(📍|📊|⚖️|🛠️|🚫|❌|🏛️|📩|📚|💡|📈|🎯|🏢)/.test(paragraph)) {
                   return (
                     <h3
                       key={pIdx}
-                      className="text-base sm:text-lg font-bold text-slate-900 mt-6 pt-3 pb-1 border-b border-slate-100 flex items-center gap-2"
+                      className="text-lg sm:text-xl font-bold text-slate-900 mt-6 pt-3 pb-1 border-b border-slate-100 flex items-center gap-2"
                     >
                       {paragraph}
                     </h3>
@@ -389,7 +389,7 @@ export const ArtigosPage: React.FC<ArtigosPageProps> = ({
                   return (
                     <blockquote
                       key={pIdx}
-                      className="border-l-4 border-[#c5a880] pl-4 py-3 my-4 italic text-slate-800 bg-amber-50/60 rounded-r-xl text-xs sm:text-sm leading-relaxed shadow-xs"
+                      className="border-l-4 border-[#c5a880] pl-4 py-3 my-4 italic text-slate-800 bg-amber-50/60 rounded-r-xl text-sm sm:text-base leading-relaxed shadow-xs"
                     >
                       {paragraph}
                     </blockquote>
@@ -403,8 +403,8 @@ export const ArtigosPage: React.FC<ArtigosPageProps> = ({
                   const body = parts.slice(1).join('\n');
                   return (
                     <div key={pIdx} className="bg-slate-50 border-l-4 border-[#2f5d8f] p-4 rounded-r-xl my-4 space-y-1.5">
-                      <div className="font-bold text-slate-900 text-xs sm:text-sm">{header}</div>
-                      {body && <p className="text-slate-700 text-xs sm:text-sm">{body}</p>}
+                      <div className="font-bold text-slate-900 text-sm sm:text-base">{header}</div>
+                      {body && <p className="text-slate-700 text-sm sm:text-base">{body}</p>}
                     </div>
                   );
                 }
@@ -412,7 +412,7 @@ export const ArtigosPage: React.FC<ArtigosPageProps> = ({
                 // Alerta Técnico
                 if (paragraph.startsWith('⚠️')) {
                   return (
-                    <div key={pIdx} className="bg-amber-50 border border-amber-200 text-amber-900 p-4 rounded-xl my-4 text-xs sm:text-sm flex items-start gap-2.5">
+                    <div key={pIdx} className="bg-amber-50 border border-amber-200 text-amber-900 p-4 rounded-xl my-4 text-sm sm:text-base flex items-start gap-2.5">
                       <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
                       <div className="font-medium">{paragraph}</div>
                     </div>
@@ -423,8 +423,8 @@ export const ArtigosPage: React.FC<ArtigosPageProps> = ({
                 if (paragraph.startsWith('• ')) {
                   const [bulletTitle, ...bulletRest] = paragraph.replace('• ', '').split('\n');
                   return (
-                    <div key={pIdx} className="flex items-start gap-2.5 pl-2 my-2 text-slate-700 text-xs sm:text-sm">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
+                    <div key={pIdx} className="flex items-start gap-2.5 pl-2 my-2 text-slate-700 text-sm sm:text-base">
+                      <span className="w-2 h-2 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
                       <div className="leading-relaxed">
                         <strong className="text-slate-900 font-semibold">{bulletTitle}</strong>
                         {bulletRest.length > 0 && <p className="text-slate-600 mt-0.5">{bulletRest.join('\n')}</p>}
@@ -438,8 +438,8 @@ export const ArtigosPage: React.FC<ArtigosPageProps> = ({
                   const num = paragraph.match(/^\d+/)?.[0];
                   const text = paragraph.replace(/^\d+\.\s/, '');
                   return (
-                    <div key={pIdx} className="flex items-start gap-2.5 pl-2 my-2 text-slate-700 text-xs sm:text-sm">
-                      <span className="w-5 h-5 rounded-full bg-slate-200 text-slate-700 text-[11px] font-bold flex items-center justify-center shrink-0 mt-0.5">
+                    <div key={pIdx} className="flex items-start gap-2.5 pl-2 my-2 text-slate-700 text-sm sm:text-base">
+                      <span className="w-6 h-6 rounded-full bg-slate-200 text-slate-800 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
                         {num}
                       </span>
                       <div className="leading-relaxed text-slate-800">{text}</div>
@@ -454,7 +454,7 @@ export const ArtigosPage: React.FC<ArtigosPageProps> = ({
                       {paragraph !== '[TABELA]' && <p className="leading-relaxed">{paragraph}</p>}
                       <div className="my-5 overflow-hidden rounded-xl border border-slate-200 shadow-sm">
                         <div className="overflow-x-auto">
-                          <table className="w-full text-left border-collapse text-xs sm:text-sm">
+                          <table className="w-full text-left border-collapse text-sm sm:text-base">
                             <thead>
                               <tr className="bg-[#2f5d8f] text-white">
                                 {selectedPost.table.headers.map((h, i) => (
@@ -518,36 +518,36 @@ export const ArtigosPage: React.FC<ArtigosPageProps> = ({
 
             {/* Publicação Oficial na Biblioteca do IBAPE Nacional */}
             {selectedPost.ibapeUrl && (
-              <div className="mt-6 p-4.5 bg-blue-50/70 border border-blue-200/80 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm shadow-xs">
+              <div className="mt-6 p-5 bg-blue-50/70 border border-blue-200/80 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-4 text-sm sm:text-base shadow-xs">
                 <div className="flex items-center gap-3 text-slate-800">
-                  <div className="w-10 h-10 rounded-xl bg-[#2f5d8f] text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-sm tracking-wider">
+                  <div className="w-11 h-11 rounded-xl bg-[#2f5d8f] text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-sm tracking-wider">
                     IBAPE
                   </div>
                   <div>
-                    <p className="font-bold text-slate-900">Artigo Técnico Publicado no IBAPE Nacional</p>
-                    <p className="text-slate-600 text-xs">Acesse o trabalho científico na íntegra na Biblioteca Técnica do Instituto Brasileiro de Avaliações e Perícias de Engenharia.</p>
+                    <p className="font-bold text-slate-900 text-sm sm:text-base">Artigo Técnico Publicado no IBAPE Nacional</p>
+                    <p className="text-slate-600 text-sm mt-0.5">Acesse o trabalho científico na íntegra na Biblioteca Técnica do Instituto Brasileiro de Avaliações e Perícias de Engenharia.</p>
                   </div>
                 </div>
                 <a
                   href={selectedPost.ibapeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#2f5d8f] hover:bg-[#244973] text-white text-xs font-bold uppercase tracking-wider px-4 py-2.5 rounded-lg shadow-sm transition-all shrink-0 cursor-pointer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#2f5d8f] hover:bg-[#244973] text-white text-sm font-bold uppercase tracking-wider px-5 py-3 rounded-lg shadow-sm transition-all shrink-0 cursor-pointer"
                 >
                   <span>ACESSAR NO IBAPE</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
+                  <ExternalLink className="w-4 h-4" />
                 </a>
               </div>
             )}
 
             {/* Referências Normativas e Legais */}
             {selectedPost.references && selectedPost.references.length > 0 && (
-              <div className="mt-6 pt-5 border-t border-slate-200 bg-slate-50 p-4 rounded-xl">
-                <div className="flex items-center gap-2 text-xs font-bold text-slate-800 uppercase tracking-wider mb-2.5">
-                  <BookOpen className="w-3.5 h-3.5 text-[#2f5d8f]" />
+              <div className="mt-6 pt-5 border-t border-slate-200 bg-slate-50 p-5 rounded-xl">
+                <div className="flex items-center gap-2 text-sm font-bold text-slate-800 uppercase tracking-wider mb-2.5">
+                  <BookOpen className="w-4 h-4 text-[#2f5d8f]" />
                   <span>Referências Normativas e Legais</span>
                 </div>
-                <ul className="space-y-1.5 text-xs text-slate-600">
+                <ul className="space-y-2 text-sm text-slate-700">
                   {selectedPost.references.map((ref, rIdx) => (
                     <li key={rIdx} className="flex items-start gap-2">
                       <span className="text-[#2f5d8f] font-bold">•</span>
@@ -558,17 +558,17 @@ export const ArtigosPage: React.FC<ArtigosPageProps> = ({
               </div>
             )}
 
-            <div className="mt-8 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 bg-slate-50 p-4 rounded-xl">
+            <div className="mt-8 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 bg-slate-50 p-5 rounded-xl">
               <div>
-                <div className="font-bold text-slate-900 text-xs">Precisa aplicar este conhecimento à sua demanda jurídica ou patrimonial?</div>
-                <div className="text-xs text-slate-600">A Callegari Engenharia oferece pareceres e laudos sob medida.</div>
+                <div className="font-bold text-slate-900 text-sm sm:text-base">Precisa aplicar este conhecimento à sua demanda jurídica ou patrimonial?</div>
+                <div className="text-sm text-slate-600 mt-0.5">A Callegari Engenharia oferece pareceres e laudos sob medida.</div>
               </div>
               <button
                 onClick={() => {
                   setSelectedPost(null);
                   onOpenBudgetModal();
                 }}
-                className="bg-[#2f5d8f] text-white text-xs font-bold px-4 py-2.5 rounded-lg hover:bg-[#244973] uppercase tracking-wider shrink-0 cursor-pointer"
+                className="bg-[#2f5d8f] text-white text-sm font-bold px-5 py-3 rounded-lg hover:bg-[#244973] uppercase tracking-wider shrink-0 cursor-pointer"
               >
                 Solicitar Suporte
               </button>

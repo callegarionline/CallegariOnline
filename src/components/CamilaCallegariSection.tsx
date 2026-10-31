@@ -39,13 +39,13 @@ export const CamilaCallegariSection: React.FC = () => {
         {/* Header: Título principal à esquerda e Selo Callegari no lado direito */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-12 pb-8 border-b border-slate-100">
           <div className="max-w-2xl">
-            <span className="text-xs font-bold font-mono tracking-widest text-[#2f5d8f] uppercase">
+            <span className="text-sm font-bold font-mono tracking-widest text-[#2f5d8f] uppercase">
               CAMILA CALLEGARI
             </span>
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 font-serif leading-tight mt-2">
               A Paixão Pela Engenharia Legal e o Propósito da Precisão
             </h2>
-            <p className="text-base font-semibold text-slate-600 mt-2">
+            <p className="text-base sm:text-lg font-semibold text-slate-700 mt-2">
               CEO, Perita Judicial e Engenheira de Avaliações
             </p>
           </div>
@@ -88,10 +88,10 @@ export const CamilaCallegariSection: React.FC = () => {
 
             {/* Legenda institucional sutil abaixo da foto */}
             <div className="mt-4 text-center sm:text-left">
-              <h3 className="text-sm font-bold text-slate-900">
+              <h3 className="text-base font-bold text-slate-900">
                 Camila Callegari
               </h3>
-              <p className="text-xs text-slate-500 mt-0.5">
+              <p className="text-sm text-slate-600 font-medium mt-1">
                 Certificação IBAPE Nacional – Nível AAA | CREA-ES
               </p>
             </div>
@@ -115,31 +115,31 @@ export const CamilaCallegariSection: React.FC = () => {
 
             {/* Bloco 2: Trajetória Acadêmica e Autoridade Técnica */}
             <div className="pt-2">
-              <h3 className="text-lg font-bold text-slate-900 font-serif mb-3">
+              <h3 className="text-xl font-bold text-slate-900 font-serif mb-3">
                 Trajetória Acadêmica e Autoridade Técnica
               </h3>
-              <p className="text-sm text-slate-600 mb-3">
+              <p className="text-base text-slate-600 mb-3">
                 Para transformar a vocação em excelência probatória, construí uma sólida trajetória acadêmica e de especialização contínua:
               </p>
-              <ul className="space-y-2 text-sm text-slate-700">
+              <ul className="space-y-2.5 text-base text-slate-700">
                 <li className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
+                  <span className="w-2 h-2 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
                   <span>Graduação em Engenharia Civil pela Universidade Federal do Espírito Santo (UFES);</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
+                  <span className="w-2 h-2 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
                   <span>Pós-Graduação em Auditoria, Perícias e Avaliações de Imóveis pelo Instituto IPOG;</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
+                  <span className="w-2 h-2 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
                   <span>Mestrado Internacional em Engenharia de Avaliações de Ativos pela Universitat Politècnica de València (UPV - Espanha);</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
+                  <span className="w-2 h-2 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
                   <span>Certificação IBAPE Nacional em Engenharia de Avaliações – Nível AAA;</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
+                  <span className="w-2 h-2 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
                   <span>Docente e Ministrante em treinamentos de Avaliação Imobiliária e Inferência Estatística para órgãos públicos (como SEFAZ/ES e SEMOBI) e pelo IBAPE em diversos estados.</span>
                 </li>
               </ul>
@@ -147,27 +147,27 @@ export const CamilaCallegariSection: React.FC = () => {
 
             {/* Bloco 3: Atuação Institucional e Liderança no Setor */}
             <div className="pt-2">
-              <h3 className="text-lg font-bold text-slate-900 font-serif mb-3">
+              <h3 className="text-xl font-bold text-slate-900 font-serif mb-3">
                 Atuação Institucional e Liderança no Setor
               </h3>
-              <p className="text-sm text-slate-600 mb-3">
+              <p className="text-base text-slate-600 mb-3">
                 Acredito que a evolução da engenharia legal passa pelo fortalecimento das instituições e da normalização técnica no Brasil. Por isso, mantenho uma presença ativa no ecossistema de perícias do país:
               </p>
-              <ul className="space-y-2 text-sm text-slate-700">
+              <ul className="space-y-2.5 text-base text-slate-700">
                 <li className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
+                  <span className="w-2 h-2 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
                   <span>Diretora de Projetos Especiais / Eventos do IBAPE Nacional;</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
+                  <span className="w-2 h-2 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
                   <span>Ex-Diretora Técnica do IBAPE-ES;</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
+                  <span className="w-2 h-2 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
                   <span>Inspetora do CREA-ES;</span>
                 </li>
                 <li className="flex items-start gap-2.5">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
+                  <span className="w-2 h-2 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
                   <span>Autora e parecerista de artigos técnicos e trabalhos científicos aprovados no Congresso Brasileiro de Engenharia de Avaliações e Perícias (COBREAP).</span>
                 </li>
               </ul>
@@ -175,7 +175,7 @@ export const CamilaCallegariSection: React.FC = () => {
 
             {/* Bloco 4: A Callegari Engenharia */}
             <div className="pt-2 space-y-3">
-              <h3 className="text-lg font-bold text-slate-900 font-serif">
+              <h3 className="text-xl font-bold text-slate-900 font-serif">
                 A Callegari Engenharia
               </h3>
               <p>
@@ -188,11 +188,11 @@ export const CamilaCallegariSection: React.FC = () => {
 
             {/* Bloco 5: Citação / Missão em Estilo Editorial Limpo */}
             <div className="pt-2">
-              <blockquote className="border-l-3 border-[#2f5d8f] pl-5 py-2 my-2 bg-slate-50 rounded-r-xl">
+              <blockquote className="border-l-4 border-[#2f5d8f] pl-5 py-3 my-2 bg-slate-50 rounded-r-xl">
                 <p className="text-base sm:text-lg italic font-serif text-slate-800 leading-relaxed">
                   &ldquo;Nossa missão é traduzir a complexidade técnica da engenharia na clareza e na blindagem probatória que o seu Direito e o seu patrimônio exigem.&rdquo;
                 </p>
-                <cite className="block mt-2 text-xs sm:text-sm font-bold text-[#2f5d8f] not-italic">
+                <cite className="block mt-2 text-sm sm:text-base font-bold text-[#2f5d8f] not-italic">
                   — Camila Callegari
                 </cite>
               </blockquote>

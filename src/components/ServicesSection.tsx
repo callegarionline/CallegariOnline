@@ -43,7 +43,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBudgetMo
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-14">
-          <div className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-[#2f5d8f] uppercase">
+          <div className="inline-flex items-center gap-2 text-sm font-bold tracking-widest text-[#2f5d8f] uppercase">
             <span className="w-6 h-0.5 bg-[#2f5d8f]" />
             SOLUÇÕES PERICIAIS
             <span className="w-6 h-0.5 bg-[#2f5d8f]" />
@@ -53,7 +53,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBudgetMo
             Engenharia Legal aplicada a controvérsias de alto valor.
           </h2>
 
-          <p className="text-slate-600 text-base leading-relaxed">
+          <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
             Soluções estruturadas para instruir ações judiciais, impugnar laudos periciais frágeis, contestar tributos municipais abusivos e determinar o valor real de mercado com respaldo da ABNT NBR 14.653.
           </p>
         </div>
@@ -78,12 +78,12 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBudgetMo
                       <IconComponent className="w-7 h-7" />
                     </div>
 
-                    <h3 className="text-lg font-extrabold text-slate-900 font-serif group-hover:text-[#2f5d8f] transition-colors leading-snug">
+                    <h3 className="text-xl font-extrabold text-slate-900 font-serif group-hover:text-[#2f5d8f] transition-colors leading-snug">
                       {service.title}
                     </h3>
                   </div>
 
-                  <p className="text-slate-600 text-xs sm:text-sm leading-relaxed font-normal">
+                  <p className="text-slate-700 text-sm sm:text-base leading-relaxed font-normal">
                     {service.shortDescription}
                   </p>
                 </div>
@@ -95,13 +95,13 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBudgetMo
         {/* Call to Action Banner Below Services */}
         <div className="mt-16 bg-slate-900 text-white rounded-xl p-8 sm:p-10 shadow-xl flex flex-col md:flex-row items-center justify-between gap-6 border border-slate-800">
           <div className="space-y-2 text-center md:text-left">
-            <span className="text-xs font-mono text-[#60a5fa] uppercase tracking-widest">
+            <span className="text-sm font-mono text-[#60a5fa] uppercase tracking-widest font-bold">
               SUPORTE TÉCNICO ESPECIALIZADO
             </span>
             <h3 className="text-xl sm:text-2xl font-bold font-serif text-white">
               PRECISA DE SUPORTE TÉCNICO? FALE COM A CALLEGARI
             </h3>
-            <p className="text-slate-300 text-xs sm:text-sm max-w-xl">
+            <p className="text-slate-200 text-sm sm:text-base max-w-xl">
               Nossa equipe técnica está pronta para avaliar seu caso e indicar a melhor metodologia para instrução da sua demanda.
             </p>
           </div>
@@ -113,7 +113,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBudgetMo
                 scrollToSection(e, '#orcamento');
                 if (onOpenBudgetModal) onOpenBudgetModal();
               }}
-              className="w-full sm:w-auto bg-[#2f5d8f] hover:bg-[#244973] text-white text-xs sm:text-sm font-bold tracking-wider px-6 py-3.5 rounded-md transition-all uppercase shadow"
+              className="w-full sm:w-auto bg-[#2f5d8f] hover:bg-[#244973] text-white text-sm font-bold tracking-wider px-6 py-3.5 rounded-md transition-all uppercase shadow"
             >
               SOLICITAR ANÁLISE
             </a>
@@ -121,7 +121,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBudgetMo
               href={`https://wa.me/${COMPANY_INFO.rawPhone}?text=${encodeURIComponent('Olá! Gostaria de falar sobre suporte técnico para uma demanda de engenharia.')}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto border border-slate-700 hover:border-white text-slate-200 hover:text-white text-xs sm:text-sm font-semibold px-5 py-3.5 rounded-md transition-colors flex items-center justify-center gap-2"
+              className="w-full sm:w-auto border border-slate-700 hover:border-white text-slate-200 hover:text-white text-sm font-semibold px-5 py-3.5 rounded-md transition-colors flex items-center justify-center gap-2"
             >
               <MessageSquare className="w-4 h-4 text-emerald-400" />
               <span>WhatsApp Direto</span>
@@ -144,27 +144,27 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBudgetMo
             </button>
 
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-mono bg-[#2f5d8f]/10 text-[#2f5d8f] font-bold px-2.5 py-1 rounded">
+              <span className="text-sm font-mono bg-[#2f5d8f]/10 text-[#2f5d8f] font-bold px-3 py-1 rounded">
                 ESPECIALIDADE TÉCNICA
               </span>
-              <span className="text-xs font-semibold text-[#727375]">Callegari Engenharia</span>
+              <span className="text-sm font-semibold text-[#727375]">Callegari Engenharia</span>
             </div>
 
             <h3 className="text-2xl font-bold font-serif text-slate-900 mb-3">
               {selectedService.title}
             </h3>
 
-            <p className="text-slate-700 text-sm leading-relaxed mb-6">
+            <p className="text-slate-700 text-base leading-relaxed mb-6">
               {selectedService.fullDescription}
             </p>
 
             <div className="bg-slate-50 p-5 rounded-lg border border-slate-200 mb-6">
-              <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider mb-3">
+              <h4 className="text-sm font-bold text-slate-900 uppercase tracking-wider mb-3">
                 Aplicações e Casos Típicos de Atuação:
               </h4>
               <ul className="space-y-2.5">
                 {selectedService.applications.map((app, i) => (
-                  <li key={i} className="flex items-start gap-2.5 text-xs text-slate-700">
+                  <li key={i} className="flex items-start gap-2.5 text-sm text-slate-700">
                     <Check className="w-4 h-4 text-[#2f5d8f] shrink-0 mt-0.5" />
                     <span>{app}</span>
                   </li>
@@ -173,7 +173,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBudgetMo
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-slate-100">
-              <span className="text-xs text-slate-500">Conforme normas ABNT & diretrizes do IBAPE</span>
+              <span className="text-sm text-slate-600">Conforme normas ABNT & diretrizes do IBAPE</span>
               <a
                 href="#orcamento"
                 onClick={(e) => {
@@ -181,7 +181,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBudgetMo
                   scrollToSection(e, '#orcamento');
                   if (onOpenBudgetModal) onOpenBudgetModal();
                 }}
-                className="w-full sm:w-auto bg-[#2f5d8f] hover:bg-[#244973] text-white text-xs font-bold px-5 py-2.5 rounded transition-all uppercase tracking-wider text-center"
+                className="w-full sm:w-auto bg-[#2f5d8f] hover:bg-[#244973] text-white text-sm font-bold px-5 py-2.5 rounded transition-all uppercase tracking-wider text-center"
               >
                 Solicitar Orçamento Deste Serviço
               </a>

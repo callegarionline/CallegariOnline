@@ -41,7 +41,7 @@ export const ConversionCTA: React.FC<ConversionCTAProps> = ({ onOpenBudgetModal 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
         <div className="max-w-3xl mx-auto space-y-6">
           
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-200 text-xs font-mono font-bold tracking-widest uppercase">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/20 border border-blue-400/30 text-blue-200 text-sm font-mono font-bold tracking-widest uppercase">
             <span>RESPOSTA RÁPIDA & ANÁLISE PRÉVIA</span>
           </div>
 
@@ -60,7 +60,7 @@ export const ConversionCTA: React.FC<ConversionCTAProps> = ({ onOpenBudgetModal 
                 scrollToSection(e, '#orcamento');
                 if (onOpenBudgetModal) onOpenBudgetModal();
               }}
-              className="w-full sm:w-auto bg-[#2f5d8f] hover:bg-[#234870] text-white font-bold text-sm tracking-wider uppercase px-8 py-4 rounded-md shadow-xl transition-all flex items-center justify-center gap-2 group cursor-pointer border border-blue-400/30"
+              className="w-full sm:w-auto bg-[#2f5d8f] hover:bg-[#234870] text-white font-bold text-sm sm:text-base tracking-wider uppercase px-8 py-4 rounded-md shadow-xl transition-all flex items-center justify-center gap-2 group cursor-pointer border border-blue-400/30"
             >
               <span>SOLICITAR ANÁLISE DO PROCESSO</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -70,7 +70,7 @@ export const ConversionCTA: React.FC<ConversionCTAProps> = ({ onOpenBudgetModal 
               href={`https://wa.me/${COMPANY_INFO.rawPhone}?text=${encodeURIComponent(COMPANY_INFO.defaultWhatsappMessage)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full sm:w-auto bg-slate-900/80 hover:bg-slate-800 text-white border border-slate-600 hover:border-slate-400 font-bold text-sm tracking-wider uppercase px-7 py-3.5 rounded-md transition-all flex items-center justify-center gap-2 shadow-lg backdrop-blur-sm"
+              className="w-full sm:w-auto bg-slate-900/80 hover:bg-slate-800 text-white border border-slate-600 hover:border-slate-400 font-bold text-sm sm:text-base tracking-wider uppercase px-7 py-4 rounded-md transition-all flex items-center justify-center gap-2 shadow-lg backdrop-blur-sm"
             >
               <MessageSquare className="w-4 h-4 text-emerald-400" />
               <span>FALAR COM ENGENHEIRA PELO WHATSAPP</span>

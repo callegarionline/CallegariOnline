@@ -23,7 +23,7 @@ export const NationalCoverageSection: React.FC = () => {
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/20 border border-blue-400/30 text-cyan-300 text-xs font-mono font-bold tracking-widest uppercase">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/20 border border-blue-400/30 text-cyan-300 text-sm font-mono font-bold tracking-widest uppercase">
             <Globe className="w-4 h-4 text-cyan-400 animate-pulse" />
             <span>PRESENÇA NACIONAL</span>
           </div>

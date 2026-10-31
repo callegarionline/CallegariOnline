@@ -60,7 +60,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBudgetModal }) => {
                   scrollToSection(e, '#orcamento');
                   if (onOpenBudgetModal) onOpenBudgetModal();
                 }}
-                className="inline-flex items-center justify-center gap-2 bg-[#2f5d8f] hover:bg-[#234870] text-white text-xs sm:text-sm font-bold tracking-wider uppercase px-8 py-4 transition-all shadow-md hover:shadow-lg group"
+                className="inline-flex items-center justify-center gap-2 bg-[#2f5d8f] hover:bg-[#234870] text-white text-sm sm:text-base font-bold tracking-wider uppercase px-8 py-4 transition-all shadow-md hover:shadow-lg group"
               >
                 <span>SOLICITAR ANÁLISE PRÉVIA</span>
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -69,7 +69,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBudgetModal }) => {
               <a
                 href="#servicos"
                 onClick={(e) => scrollToSection(e, '#servicos')}
-                className="inline-flex items-center justify-center border border-gray-300 hover:border-[#2f5d8f] hover:bg-gray-50 text-black text-xs sm:text-sm font-bold tracking-wider uppercase px-8 py-4 transition-colors bg-white shadow-sm"
+                className="inline-flex items-center justify-center border border-gray-300 hover:border-[#2f5d8f] hover:bg-gray-50 text-black text-sm sm:text-base font-bold tracking-wider uppercase px-8 py-4 transition-colors bg-white shadow-sm"
               >
                 CONHEÇA NOSSOS SERVIÇOS
               </a>

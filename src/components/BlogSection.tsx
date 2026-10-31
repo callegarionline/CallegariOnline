@@ -17,7 +17,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onNavigateToArtigos })
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-[#2f5d8f] uppercase">
+          <div className="inline-flex items-center gap-2 text-sm font-bold tracking-widest text-[#2f5d8f] uppercase">
             <BookOpen className="w-4 h-4" />
             CONHECIMENTO & ARTIGOS
           </div>
@@ -26,7 +26,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onNavigateToArtigos })
             Conhecimento técnico para decisões mais seguras.
           </h2>
 
-          <p className="text-slate-600 text-base leading-relaxed">
+          <p className="text-slate-600 text-base sm:text-lg leading-relaxed">
             Artigos técnicos e análises focadas na convergência entre o Direito Imobiliário/Processual e a Engenharia Legal.
           </p>
         </div>
@@ -48,30 +48,30 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onNavigateToArtigos })
                     loading="lazy"
                     referrerPolicy="no-referrer"
                   />
-                  <div className="absolute top-3 left-3 bg-[#2f5d8f] text-white text-[10px] font-bold tracking-widest px-2.5 py-1 rounded uppercase shadow">
+                  <div className="absolute top-3 left-3 bg-[#2f5d8f] text-white text-xs font-bold tracking-widest px-3 py-1.5 rounded uppercase shadow">
                     {post.category}
                   </div>
                 </div>
 
                 {/* Article Info */}
                 <div className="p-6 space-y-3">
-                  <div className="flex items-center gap-4 text-xs text-slate-400 font-medium">
-                    <span className="flex items-center gap-1">
-                      <Calendar className="w-3.5 h-3.5" />
+                  <div className="flex items-center gap-4 text-sm text-slate-500 font-medium">
+                    <span className="flex items-center gap-1.5">
+                      <Calendar className="w-4 h-4 text-[#2f5d8f]" />
                       {post.date}
                     </span>
                     <span>•</span>
-                    <span className="flex items-center gap-1">
-                      <Clock className="w-3.5 h-3.5" />
+                    <span className="flex items-center gap-1.5">
+                      <Clock className="w-4 h-4 text-[#2f5d8f]" />
                       {post.readTime}
                     </span>
                   </div>
 
-                  <h3 className="text-base sm:text-lg font-bold text-slate-900 font-serif leading-snug group-hover:text-[#2f5d8f] transition-colors">
+                  <h3 className="text-lg sm:text-xl font-bold text-slate-900 font-serif leading-snug group-hover:text-[#2f5d8f] transition-colors">
                     {post.title}
                   </h3>
 
-                  <p className="text-xs text-slate-600 line-clamp-3 leading-relaxed">
+                  <p className="text-sm text-slate-600 line-clamp-3 leading-relaxed">
                     {post.summary}
                   </p>
                 </div>
@@ -80,7 +80,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onNavigateToArtigos })
               <div className="p-6 pt-0">
                 <button
                   onClick={() => setSelectedPost(post)}
-                  className="w-full inline-flex items-center justify-between text-xs font-bold text-[#2f5d8f] hover:text-[#244973] uppercase tracking-wider py-2 border-t border-slate-100 cursor-pointer"
+                  className="w-full inline-flex items-center justify-between text-sm font-bold text-[#2f5d8f] hover:text-[#244973] uppercase tracking-wider py-2.5 border-t border-slate-100 cursor-pointer"
                 >
                   <span>LER ARTIGO COMPLETO</span>
                   <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -95,9 +95,9 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onNavigateToArtigos })
           <div className="mt-12 text-center">
             <button
               onClick={onNavigateToArtigos}
-              className="inline-flex items-center gap-2.5 bg-[#2f5d8f] hover:bg-[#234870] text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-8 py-4 rounded-xl shadow-md hover:shadow-lg transition-all cursor-pointer group"
+              className="inline-flex items-center gap-2.5 bg-[#2f5d8f] hover:bg-[#234870] text-white text-sm sm:text-base font-bold uppercase tracking-wider px-8 py-4 rounded-xl shadow-md hover:shadow-lg transition-all cursor-pointer group"
             >
-              <BookOpen className="w-4 h-4 text-emerald-300" />
+              <BookOpen className="w-5 h-5 text-emerald-300" />
               <span>ACESSAR TODOS OS ARTIGOS & PUBLICAÇÕES</span>
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
             </button>
@@ -119,11 +119,11 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onNavigateToArtigos })
             </button>
 
             <div className="flex items-center gap-3 mb-4">
-              <span className="text-xs font-mono bg-[#2f5d8f] text-white font-bold px-2.5 py-1 rounded">
+              <span className="text-sm font-mono bg-[#2f5d8f] text-white font-bold px-3 py-1 rounded">
                 {selectedPost.category}
               </span>
-              <span className="text-xs text-slate-400">{selectedPost.date}</span>
-              <span className="text-xs text-slate-400">• {selectedPost.readTime}</span>
+              <span className="text-sm text-slate-500">{selectedPost.date}</span>
+              <span className="text-sm text-slate-500">• {selectedPost.readTime}</span>
             </div>
 
             <h3 className="text-2xl sm:text-3xl font-bold font-serif text-slate-900 mb-4 leading-tight">
@@ -132,9 +132,9 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onNavigateToArtigos })
 
             {/* Author */}
             {selectedPost.author && (
-              <div className="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-slate-700 bg-slate-50 border border-slate-200 px-3.5 py-2.5 rounded-xl mb-6">
-                <div className="w-7 h-7 rounded-full bg-[#2f5d8f]/10 flex items-center justify-center text-[#2f5d8f] shrink-0">
-                  <User className="w-4 h-4" />
+              <div className="flex items-center gap-2.5 text-sm sm:text-base font-semibold text-slate-700 bg-slate-50 border border-slate-200 px-4 py-3 rounded-xl mb-6">
+                <div className="w-8 h-8 rounded-full bg-[#2f5d8f]/10 flex items-center justify-center text-[#2f5d8f] shrink-0">
+                  <User className="w-5 h-5" />
                 </div>
                 <span>{selectedPost.author}</span>
               </div>
@@ -144,13 +144,13 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onNavigateToArtigos })
               <img src={selectedPost.imageUrl} alt={selectedPost.title} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
             </div>
 
-            <div className="space-y-4 text-slate-700 text-sm leading-relaxed font-normal">
+            <div className="space-y-4 text-slate-700 text-base leading-relaxed font-normal">
               {selectedPost.content.map((paragraph, pIdx) => {
                 if (/^(📍|📊|⚖️|🛠️|🚫|❌|🏛️|📩|📚|💡|📈|🎯|🏢)/.test(paragraph)) {
                   return (
                     <h4
                       key={pIdx}
-                      className="text-base sm:text-lg font-bold text-slate-900 mt-6 pt-3 pb-1 border-b border-slate-100 flex items-center gap-2"
+                      className="text-lg sm:text-xl font-bold text-slate-900 mt-6 pt-3 pb-1 border-b border-slate-100 flex items-center gap-2"
                     >
                       {paragraph}
                     </h4>
@@ -161,7 +161,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onNavigateToArtigos })
                   return (
                     <blockquote
                       key={pIdx}
-                      className="border-l-4 border-[#c5a880] pl-4 py-3 my-4 italic text-slate-800 bg-amber-50/60 rounded-r-xl text-xs sm:text-sm leading-relaxed shadow-xs"
+                      className="border-l-4 border-[#c5a880] pl-4 py-3 my-4 italic text-slate-800 bg-amber-50/60 rounded-r-xl text-sm sm:text-base leading-relaxed shadow-xs"
                     >
                       {paragraph}
                     </blockquote>
@@ -172,15 +172,15 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onNavigateToArtigos })
                   const parts = paragraph.split('\n');
                   return (
                     <div key={pIdx} className="bg-slate-50 border-l-4 border-[#2f5d8f] p-4 rounded-r-xl my-4 space-y-1.5">
-                      <div className="font-bold text-slate-900 text-xs sm:text-sm">{parts[0]}</div>
-                      {parts[1] && <p className="text-slate-700 text-xs sm:text-sm">{parts.slice(1).join('\n')}</p>}
+                      <div className="font-bold text-slate-900 text-sm sm:text-base">{parts[0]}</div>
+                      {parts[1] && <p className="text-slate-700 text-sm sm:text-base">{parts.slice(1).join('\n')}</p>}
                     </div>
                   );
                 }
 
                 if (paragraph.startsWith('⚠️')) {
                   return (
-                    <div key={pIdx} className="bg-amber-50 border border-amber-200 text-amber-900 p-4 rounded-xl my-4 text-xs sm:text-sm flex items-start gap-2.5">
+                    <div key={pIdx} className="bg-amber-50 border border-amber-200 text-amber-900 p-4 rounded-xl my-4 text-sm sm:text-base flex items-start gap-2.5">
                       <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
                       <div className="font-medium">{paragraph}</div>
                     </div>
@@ -190,8 +190,8 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onNavigateToArtigos })
                 if (paragraph.startsWith('• ')) {
                   const [bulletTitle, ...bulletRest] = paragraph.replace('• ', '').split('\n');
                   return (
-                    <div key={pIdx} className="flex items-start gap-2.5 pl-2 my-2 text-slate-700 text-xs sm:text-sm">
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
+                    <div key={pIdx} className="flex items-start gap-2.5 pl-2 my-2 text-slate-700 text-sm sm:text-base">
+                      <span className="w-2 h-2 rounded-full bg-[#2f5d8f] shrink-0 mt-2" />
                       <div className="leading-relaxed">
                         <strong className="text-slate-900 font-semibold">{bulletTitle}</strong>
                         {bulletRest.length > 0 && <p className="text-slate-600 mt-0.5">{bulletRest.join('\n')}</p>}
@@ -204,8 +204,8 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onNavigateToArtigos })
                   const num = paragraph.match(/^\d+/)?.[0];
                   const text = paragraph.replace(/^\d+\.\s/, '');
                   return (
-                    <div key={pIdx} className="flex items-start gap-2.5 pl-2 my-2 text-slate-700 text-xs sm:text-sm">
-                      <span className="w-5 h-5 rounded-full bg-slate-200 text-slate-700 text-[11px] font-bold flex items-center justify-center shrink-0 mt-0.5">
+                    <div key={pIdx} className="flex items-start gap-2.5 pl-2 my-2 text-slate-700 text-sm sm:text-base">
+                      <span className="w-6 h-6 rounded-full bg-slate-200 text-slate-800 text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">
                         {num}
                       </span>
                       <div className="leading-relaxed text-slate-800">{text}</div>
@@ -219,7 +219,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onNavigateToArtigos })
                       {paragraph !== '[TABELA]' && <p className="leading-relaxed">{paragraph}</p>}
                       <div className="my-5 overflow-hidden rounded-xl border border-slate-200 shadow-sm">
                         <div className="overflow-x-auto">
-                          <table className="w-full text-left border-collapse text-xs sm:text-sm">
+                          <table className="w-full text-left border-collapse text-sm sm:text-base">
                             <thead>
                               <tr className="bg-[#2f5d8f] text-white">
                                 {selectedPost.table.headers.map((h, i) => (
@@ -257,7 +257,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onNavigateToArtigos })
             {/* Direct WhatsApp Callout */}
             {selectedPost.whatsappUrl && (
               <div className="mt-8 p-5 bg-emerald-50 border border-emerald-200 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-4">
-                <div className="text-xs sm:text-sm text-emerald-950 flex items-center gap-2.5">
+                <div className="text-sm sm:text-base text-emerald-950 flex items-center gap-2.5">
                   <div className="w-9 h-9 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 shrink-0">
                     <MessageCircle className="w-5 h-5" />
                   </div>
@@ -269,7 +269,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onNavigateToArtigos })
                   href={selectedPost.whatsappUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-5 py-3 rounded-lg shadow-sm transition-all shrink-0 cursor-pointer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20ba59] text-white text-sm font-bold uppercase tracking-wider px-6 py-3.5 rounded-lg shadow-sm transition-all shrink-0 cursor-pointer"
                 >
                   <MessageCircle className="w-4 h-4" />
                   <span>FALAR NO WHATSAPP</span>
@@ -279,36 +279,36 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onNavigateToArtigos })
 
             {/* Publicação Oficial na Biblioteca do IBAPE Nacional */}
             {selectedPost.ibapeUrl && (
-              <div className="mt-6 p-4.5 bg-blue-50/70 border border-blue-200/80 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-4 text-xs sm:text-sm shadow-xs">
+              <div className="mt-6 p-5 bg-blue-50/70 border border-blue-200/80 rounded-xl flex flex-col sm:flex-row items-center justify-between gap-4 text-sm sm:text-base shadow-xs">
                 <div className="flex items-center gap-3 text-slate-800">
-                  <div className="w-10 h-10 rounded-xl bg-[#2f5d8f] text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-sm tracking-wider">
+                  <div className="w-11 h-11 rounded-xl bg-[#2f5d8f] text-white flex items-center justify-center font-bold text-xs shrink-0 shadow-sm tracking-wider">
                     IBAPE
                   </div>
                   <div>
-                    <p className="font-bold text-slate-900">Artigo Técnico Publicado no IBAPE Nacional</p>
-                    <p className="text-slate-600 text-xs">Acesse o trabalho científico na íntegra na Biblioteca Técnica do Instituto Brasileiro de Avaliações e Perícias de Engenharia.</p>
+                    <p className="font-bold text-slate-900 text-sm sm:text-base">Artigo Técnico Publicado no IBAPE Nacional</p>
+                    <p className="text-slate-600 text-sm mt-0.5">Acesse o trabalho científico na íntegra na Biblioteca Técnica do Instituto Brasileiro de Avaliações e Perícias de Engenharia.</p>
                   </div>
                 </div>
                 <a
                   href={selectedPost.ibapeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#2f5d8f] hover:bg-[#244973] text-white text-xs font-bold uppercase tracking-wider px-4 py-2.5 rounded-lg shadow-sm transition-all shrink-0 cursor-pointer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#2f5d8f] hover:bg-[#244973] text-white text-sm font-bold uppercase tracking-wider px-5 py-3 rounded-lg shadow-sm transition-all shrink-0 cursor-pointer"
                 >
                   <span>ACESSAR NO IBAPE</span>
-                  <ExternalLink className="w-3.5 h-3.5" />
+                  <ExternalLink className="w-4 h-4" />
                 </a>
               </div>
             )}
 
             {/* Referências Normativas e Legais */}
             {selectedPost.references && selectedPost.references.length > 0 && (
-              <div className="mt-6 pt-5 border-t border-slate-200 bg-slate-50 p-4 rounded-xl">
-                <div className="flex items-center gap-2 text-xs font-bold text-slate-800 uppercase tracking-wider mb-2.5">
-                  <BookOpen className="w-3.5 h-3.5 text-[#2f5d8f]" />
+              <div className="mt-6 pt-5 border-t border-slate-200 bg-slate-50 p-5 rounded-xl">
+                <div className="flex items-center gap-2 text-sm font-bold text-slate-800 uppercase tracking-wider mb-2.5">
+                  <BookOpen className="w-4 h-4 text-[#2f5d8f]" />
                   <span>Referências Normativas e Legais</span>
                 </div>
-                <ul className="space-y-1.5 text-xs text-slate-600">
+                <ul className="space-y-2 text-sm text-slate-700">
                   {selectedPost.references.map((ref, rIdx) => (
                     <li key={rIdx} className="flex items-start gap-2">
                       <span className="text-[#2f5d8f] font-bold">•</span>
@@ -319,10 +319,10 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onNavigateToArtigos })
               </div>
             )}
 
-            <div className="mt-8 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 bg-slate-50 p-4 rounded-lg">
+            <div className="mt-8 pt-6 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 bg-slate-50 p-5 rounded-lg">
               <div>
-                <div className="font-bold text-slate-900 text-xs">Precisa aplicar este conhecimento à sua demanda?</div>
-                <div className="text-xs text-slate-600">A Callegari Engenharia está à disposição para análise técnica.</div>
+                <div className="font-bold text-slate-900 text-sm sm:text-base">Precisa aplicar este conhecimento à sua demanda?</div>
+                <div className="text-sm text-slate-600 mt-0.5">A Callegari Engenharia está à disposição para análise técnica.</div>
               </div>
               <button
                 onClick={() => {
@@ -330,7 +330,7 @@ export const BlogSection: React.FC<BlogSectionProps> = ({ onNavigateToArtigos })
                   const el = document.querySelector('#orcamento');
                   if (el) el.scrollIntoView({ behavior: 'smooth' });
                 }}
-                className="bg-[#2f5d8f] text-white text-xs font-bold px-4 py-2.5 rounded hover:bg-[#244973] uppercase tracking-wider shrink-0 cursor-pointer"
+                className="bg-[#2f5d8f] text-white text-sm font-bold px-5 py-3 rounded-lg hover:bg-[#244973] uppercase tracking-wider shrink-0 cursor-pointer"
               >
                 Solicitar Suporte
               </button>

@@ -17,7 +17,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onNavigateToSeguranc
           
           {/* Left Side: About Text */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-flex items-center gap-2 text-xs font-bold tracking-widest text-[#2f5d8f] uppercase">
+            <div className="inline-flex items-center gap-2 text-sm font-bold tracking-widest text-[#2f5d8f] uppercase">
               <span className="w-8 h-0.5 bg-[#2f5d8f]" />
               SEGURANÇA JURÍDICA & PROTEÇÃO PATRIMONIAL
             </div>
@@ -40,16 +40,16 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onNavigateToSeguranc
               <div className="flex items-start gap-3 p-4 bg-slate-50 rounded-xl border border-slate-200">
                 <CheckCircle2 className="w-5 h-5 text-[#2f5d8f] shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-slate-900 text-sm">Rescisão e Fundamentação</h4>
-                  <p className="text-xs text-slate-600 mt-0.5">Aplicação das normas técnicas pertinentes a cada trabalho, especialmente as ABNT NBR 14653 e 13752, com métodos claros e conclusões fundamentadas.</p>
+                  <h4 className="font-bold text-slate-900 text-base">Rescisão e Fundamentação</h4>
+                  <p className="text-sm text-slate-600 mt-1 leading-relaxed">Aplicação das normas técnicas pertinentes a cada trabalho, especialmente as ABNT NBR 14653 e 13752, com métodos claros e conclusões fundamentadas.</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-3 p-4 bg-slate-50 rounded-xl border border-slate-200">
                 <CheckCircle2 className="w-5 h-5 text-[#2f5d8f] shrink-0 mt-0.5" />
                 <div>
-                  <h4 className="font-bold text-slate-900 text-sm">Responsabilidade & Cumprimento de Prazos</h4>
-                  <p className="text-xs text-slate-600 mt-0.5">Gestão ágil e compromisso com os prazos processuais</p>
+                  <h4 className="font-bold text-slate-900 text-base">Responsabilidade & Cumprimento de Prazos</h4>
+                  <p className="text-sm text-slate-600 mt-1 leading-relaxed">Gestão ágil e compromisso com os prazos processuais</p>
                 </div>
               </div>
             </div>
@@ -86,10 +86,10 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onNavigateToSeguranc
                     <ShieldCheck className="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 className="text-xs font-bold uppercase tracking-wider text-blue-200">
+                    <h4 className="text-sm font-bold uppercase tracking-wider text-blue-200">
                       Engenharia Legal & Avaliações
                     </h4>
-                    <p className="text-xs text-slate-300 font-normal mt-0.5">
+                    <p className="text-sm text-slate-200 font-normal mt-0.5">
                       Rigor técnico e suporte probatório em todo o Brasil.
                     </p>
                   </div>

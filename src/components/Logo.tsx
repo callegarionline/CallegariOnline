@@ -87,7 +87,7 @@ export const Logo: React.FC<LogoProps> = ({
             </span>
             {showSubtitle && (
               <span
-                className={`text-[10px] sm:text-[11px] font-semibold tracking-[0.2em] uppercase mt-0.5 ${secondaryTextColor}`}
+                className={`text-xs font-semibold tracking-[0.2em] uppercase mt-0.5 ${secondaryTextColor}`}
               >
                 ENGENHARIA
               </span>

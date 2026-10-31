@@ -366,20 +366,6 @@ export const BLOG_POSTS: BlogPost[] = [
       'ABNT NBR 14653-2: Avaliação de Imóveis Urbanos.',
       'ABNT NBR 14653-3: Avaliação de Imóveis Rurais.'
     ]
-  },
-  {
-    id: 'artigo-1',
-    title: 'Assistência Técnica Judicial: Como a formulação estratégica de quesitos decide a perícia',
-    category: 'Assistência Técnica Judicial',
-    readTime: '5 min de leitura',
-    date: '10 Ago 2026',
-    summary: 'Descubra como os quesitos elaborados pelo assistente técnico orientam o perito judicial, fecham brechas e evitam laudos omissos ou tendenciosos no processo.',
-    imageUrl: 'https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&q=80&w=800',
-    content: [
-      'Na produção da prova pericial de engenharia, a elaboração dos quesitos é uma das etapas mais decisivas para o sucesso processual da demanda.',
-      'Muitas vezes, quesitos genéricos deixam margem para respostas superficiais do perito do juízo. Por outro lado, quesitos técnicos bem articulados direcionam a perícia para os pontos essenciais da lide.',
-      'O assistente técnico especializado atua lado a lado com o advogado, traduzindo as teses jurídicas em questionamentos normatizados da ABNT, exigindo fundamentação sólida do perito e blindando o processo contra nulidades.'
-    ]
   }
 ];
 
