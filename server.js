@@ -1,5 +1,6 @@
 import express from 'express';
 import path from 'path';
+import fs from 'fs';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -7,7 +8,11 @@ const __dirname = path.dirname(__filename);
 
 const app = express();
 const PORT = process.env.PORT || 3000;
-const distPath = path.resolve(__dirname, 'dist');
+
+// Suporte para build/ (padrão de deploy) ou dist/
+const distPath = fs.existsSync(path.resolve(__dirname, 'build'))
+  ? path.resolve(__dirname, 'build')
+  : path.resolve(__dirname, 'dist');
 
 // Middleware de segurança e tipos MIME
 app.use((req, res, next) => {
